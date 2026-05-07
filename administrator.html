@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DCS New Administrator Mentor Program</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fbfbfb; color: #333; }
+  .program-wrapper { max-width: 1100px; margin: 0 auto; padding: 20px; }
+  .population-nav {
+    display: flex; gap: 0; margin-bottom: 16px;
+    background: #f1ebd8; border: 1px solid #caa217; border-radius: 8px;
+    overflow: hidden;
+  }
+  .population-nav a {
+    flex: 1; padding: 12px 16px; text-align: center; text-decoration: none;
+    color: #555; font-size: 14px; font-weight: bold; transition: all 0.2s ease;
+    border-right: 1px solid #caa217;
+  }
+  .population-nav a:last-child { border-right: none; }
+  .population-nav a:hover { background: #fff8dc; color: #800020; }
+  .population-nav a.active { background: #800020; color: white; }
+  .nav-tabs {
+    display: flex; flex-wrap: wrap; gap: 4px;
+    margin-bottom: 24px; padding-bottom: 8px;
+    border-bottom: 3px solid #800020;
+    position: sticky; top: 0; background: #fbfbfb; z-index: 10;
+  }
+  .nav-tabs button {
+    padding: 10px 16px; background: #f8f9fa;
+    border: 1px solid #dee2e6; border-radius: 6px 6px 0 0;
+    cursor: pointer; font-size: 14px; color: #555;
+    font-family: Arial, sans-serif; transition: all 0.2s ease;
+  }
+  .nav-tabs button:hover { background: #e9ecef; color: #800020; }
+  .nav-tabs button.active {
+    background: #800020; color: white;
+    border-color: #800020; font-weight: bold;
+  }
+  .page { display: none; }
+  .page.active { display: block; }
+  a { color: #800020; }
+  @media print {
+    .nav-tabs, .population-nav { display: none; }
+    .page { display: block !important; page-break-after: always; }
+  }
+</style>
+</head>
+<body>
+<div class="program-wrapper">
+
+<nav class="population-nav" aria-label="Population tracks">
+  <a href="index.html">Teacher</a>
+  <a href="counselor.html">Counselor</a>
+  <a href="administrator.html" class="active">Administrator</a>
+</nav>
+
+<nav class="nav-tabs" aria-label="Program sections">
+<button class="tab-btn active" data-target="overview">Overview</button>
+<button class="tab-btn" data-target="august">August</button>
+<button class="tab-btn" data-target="september">September</button>
+<button class="tab-btn" data-target="october">October</button>
+<button class="tab-btn" data-target="november">November</button>
+<button class="tab-btn" data-target="december">December</button>
+<button class="tab-btn" data-target="january">January</button>
+<button class="tab-btn" data-target="february">February</button>
+<button class="tab-btn" data-target="march">March</button>
+<button class="tab-btn" data-target="april">April</button>
+<button class="tab-btn" data-target="may">May</button>
+</nav>
+
+<section id="overview" class="page active">
+<div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
+
+<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<tbody><tr><td style="text-align: center; color: white;">
+<h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">DCS New Administrator Mentor Program</h1>
+<p style="color: white; font-size: 16px; margin: 0;">Aligned with Michigan Standards for Mentoring and Induction (2026) and MCL 380.1249b</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; margin-bottom: 20px;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td style="width: 60px; vertical-align: top;">
+<div style="width: 50px; height: 50px; background-color: #800020; border-radius: 8px; text-align: center; line-height: 50px; color: white; font-size: 20px;">🏛️</div>
+</td>
+<td style="padding-left: 15px; vertical-align: top;">
+<h2 style="color: #333; font-size: 24px; margin: 0 0 5px 0;">Program Overview</h2>
+<p style="color: #666; font-size: 14px; margin: 0;">Supporting new administrators through their first three years</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">🎯 Mission</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">The DCS New Administrator Mentor Program creates the conditions for new building and district leaders to thrive — building confidence in leadership practice, fostering well-being and belonging through cross-district networks, deepening connection to our school community, and strengthening instructional leadership. We believe new administrators grow best through trusting, collaborative, strengths-based mentoring relationships that honor each leader's prior experience and the realities of leading inside Dexter Community Schools.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 18px;">🤝 The Mentor Role — and Its Particular Tension for Admins</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0 0 10px 0;"><strong>Mentoring in DCS is non-supervisory, non-evaluative, and confidential.</strong> Mentors are not evaluators. The mentor's role is to support the new administrator's growth as a thought partner, sounding board, and trusted colleague — never to report on, judge, or assess them.</p>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0 0 10px 0;">For administrators, this boundary requires extra care. Your mentor is often a peer in district leadership with overlapping authority, attendance at the same cabinet meetings, or a hand in decisions that affect the new administrator's building. The mentoring relationship is held separate from those structural dynamics. Things shared in mentoring stay in mentoring. The mentor does not carry the new administrator's struggles into evaluation conversations or leadership team discussions.</p>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">The only exceptions to confidentiality are situations involving student safety, staff safety, mandatory reporting obligations, or clear ethical or legal concerns. Otherwise, the relationship is genuinely confidential — and naming this explicitly at the start of the year is essential.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 18px;">📓 Mentor–Mentee Contact Log</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0 0 10px 0;">Every mentor pair maintains a contact log throughout the year. Each meeting is a row: date, start and end times, topic or activity, and both mentor and mentee initials.</p>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Sign-off happens at two gate checks: <strong>November 15</strong> for the first half (Aug–Nov) and <strong>May 1</strong> for the second half (Dec–May), with year-end total hours filled in at the close. For administrators, the Human Resources Director signs off rather than a building principal — the new administrator typically <em>is</em> the building principal, or reports directly to a superintendent who would be inappropriate as the gate-check signer.</p>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 15px 0; font-size: 22px;">The Four Domains of Mentoring Practice</h3>
+<p style="color: #666; font-size: 14px; margin: 0 0 15px 0;">Drawn from Michigan Standards 7–10, with administrator-specific sub-standards (7c, 8c, 9c, 10c). Each monthly module is built around these four domains.</p>
+
+<table style="width: 100%; margin: 0 0 20px 0;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td style="width: 25%; vertical-align: top; padding: 8px;">
+<table style="width: 100%; background: #f8f9fa; border: 2px solid #dee2e6; border-top: 4px solid #800020; border-radius: 8px; height: 100%;" cellspacing="0" cellpadding="15"><tbody><tr><td>
+<strong style="color: #800020; font-size: 14px; display: block; margin-bottom: 5px;">🤝 Relationship &amp; Goals</strong>
+<span style="color: #555; font-size: 13px; line-height: 1.4;">Build trust, set goals together, review progress, and provide formative feedback aligned to the new administrator's leadership priorities and NELP-aligned practice.</span>
+</td></tr></tbody></table>
+</td>
+<td style="width: 25%; vertical-align: top; padding: 8px;">
+<table style="width: 100%; background: #f8f9fa; border: 2px solid #dee2e6; border-top: 4px solid #800020; border-radius: 8px; height: 100%;" cellspacing="0" cellpadding="15"><tbody><tr><td>
+<strong style="color: #800020; font-size: 14px; display: block; margin-bottom: 5px;">💚 Well-Being &amp; Belonging</strong>
+<span style="color: #555; font-size: 13px; line-height: 1.4;">Sustain practice through the isolation, decision fatigue, and political weight of leadership work. Cross-district peer networks (per Standard 8c.1) are central, not optional.</span>
+</td></tr></tbody></table>
+</td>
+<td style="width: 25%; vertical-align: top; padding: 8px;">
+<table style="width: 100%; background: #f8f9fa; border: 2px solid #dee2e6; border-top: 4px solid #800020; border-radius: 8px; height: 100%;" cellspacing="0" cellpadding="15"><tbody><tr><td>
+<strong style="color: #800020; font-size: 14px; display: block; margin-bottom: 5px;">🌐 Culture &amp; Community</strong>
+<span style="color: #555; font-size: 13px; line-height: 1.4;">Connect new administrators to staff, families, the school board, and the broader Dexter community; navigate the political and relational dimensions of the role.</span>
+</td></tr></tbody></table>
+</td>
+<td style="width: 25%; vertical-align: top; padding: 8px;">
+<table style="width: 100%; background: #f8f9fa; border: 2px solid #dee2e6; border-top: 4px solid #800020; border-radius: 8px; height: 100%;" cellspacing="0" cellpadding="15"><tbody><tr><td>
+<strong style="color: #800020; font-size: 14px; display: block; margin-bottom: 5px;">📚 Instructional Leadership</strong>
+<span style="color: #555; font-size: 13px; line-height: 1.4;">Strengthen leadership practice — teacher evaluation, walkthrough practice, instructional decision-making, supervision, and how to support teaching without being the only voice that matters.</span>
+</td></tr></tbody></table>
+</td>
+</tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 15px 0; font-size: 22px;">A Three-Year Journey</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0;">Per Michigan law (MCL 380.1249b), new administrators receive mentoring across their first three years. Support is most intensive in Year 1 and gradually shifts toward independence. The contract year for administrators is typically twelve months — mentoring continues through summer in a lighter form.</p>
+
+<table style="width: 100%; margin: 0 0 20px 0;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td style="width: 33%; vertical-align: top; padding: 8px;">
+<table style="width: 100%; background: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; height: 100%;" cellspacing="0" cellpadding="15"><tbody><tr><td>
+<strong style="color: #800020; font-size: 14px; display: block; margin-bottom: 5px;">1 Year 1: Foundation</strong>
+<span style="color: #555; font-size: 13px; line-height: 1.4;">First everything — first opening, first board meeting, first eval cycle, first hard parent call, first hiring round. Most intensive support.</span>
+</td></tr></tbody></table>
+</td>
+<td style="width: 33%; vertical-align: top; padding: 8px;">
+<table style="width: 100%; background: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; height: 100%;" cellspacing="0" cellpadding="15"><tbody><tr><td>
+<strong style="color: #800020; font-size: 14px; display: block; margin-bottom: 5px;">2 Year 2: Refinement</strong>
+<span style="color: #555; font-size: 13px; line-height: 1.4;">Deepening leadership practice with a year of experience as comparison. Emerging leadership beyond the building. More autonomy in goal-setting.</span>
+</td></tr></tbody></table>
+</td>
+<td style="width: 33%; vertical-align: top; padding: 8px;">
+<table style="width: 100%; background: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; height: 100%;" cellspacing="0" cellpadding="15"><tbody><tr><td>
+<strong style="color: #800020; font-size: 14px; display: block; margin-bottom: 5px;">3 Year 3: Independence</strong>
+<span style="color: #555; font-size: 13px; line-height: 1.4;">Mentee-led growth with consultative mentor support. Leadership trajectory beyond the program is the focus. MCL 380.1249b compliance closes here.</span>
+</td></tr></tbody></table>
+</td>
+</tr></tbody></table>
+
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">🌐 Cross-District Peer Networking — Required, Not Optional</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0 0 10px 0;">Per Standard 8c.1, administrator well-being depends on networks beyond the home district. New administrators in their first years are uniquely isolated — there is often no one in their building who shares the role, and the people who do share it across the district may also be in their evaluation chain. Cross-district peers fill that gap.</p>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">The mentor's job is to make sure the new administrator is connected to:</p>
+<table style="width: 100%; margin-top: 10px;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>MASSP</strong> (Michigan Association of Secondary School Principals), <strong>MEMSPA</strong> (Michigan Elementary and Middle School Principals Association), or <strong>MASA</strong> (Michigan Association of Superintendents and Administrators) — depending on role and level</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>NASSP</strong> or <strong>NAESP</strong> — national-level networks for principals</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">The <strong>Washtenaw ISD administrator network</strong> — periodic regional convenings of admins across the ISD</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">An informal cohort of 2–4 admins from neighboring districts at the same level who meet a few times a year</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 15px 0; font-size: 22px;">📅 Year 1 at a Glance</h3>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>August:</strong> Opening, Late Hires, All-Staff PD, Establishing Presence</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>September:</strong> First Walkthroughs, Goal-Setting, Board Cycle Awareness</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>October:</strong> First Parent Escalation, Conferences, Staff Support</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>November:</strong> First Gate Check, First Formal Eval Cycle Begins</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>December:</strong> Semester Closure, Holiday Community, Well-Being</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>January:</strong> Mid-Year Reset, Budget Cycle Begins</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>February:</strong> Eval Cycle Heavy Lift, Hiring Planning</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>March:</strong> Hiring Round, Master Schedule, Spring Planning</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>April:</strong> Testing Season, Year-End Evals, Documentation</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>May:</strong> Year-End Closure, Contract Renewals, Summer Transition</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="15">
+<tbody><tr><td style="color: #555; font-size: 13px; line-height: 1.5;">
+This program is aligned with the Michigan Department of Education's <em>Standards for Mentoring and Induction of New Teachers, School Counselors, and Administrators</em> (April 2026), MCL 380.1249b, and the NELP (National Educational Leadership Preparation) Standards.
+</td></tr></tbody></table>
+
+</div>
+</section>
+
+<section id="august" class="page">
+<div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
+<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<tbody><tr><td style="text-align: center; color: white;">
+<h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">August</h1>
+<p style="color: white; font-size: 16px; margin: 0;">Opening, Late Hires, All-Staff PD & Establishing Presence</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; margin-bottom: 20px;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td style="width: 60px; vertical-align: top;">
+<div style="width: 50px; height: 50px; background-color: #800020; border-radius: 8px; text-align: center; line-height: 50px; color: white; font-size: 20px;">🌻</div>
+</td>
+<td style="padding-left: 15px; vertical-align: top;">
+<h2 style="color: #333; font-size: 24px; margin: 0 0 5px 0;">August Focus</h2>
+<p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">August is the heaviest month of the year for a new administrator. The building opens, late vacancies need to be filled, all-staff PD has to land, and your mentee is forming their first impressions on every staff member at once. Your job this month is to be available, help them triage, and resist the urge to make decisions for them. Most decisions can be made by the new administrator with a thinking partner — they need help with sequencing, not with answers.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">⚠️ A Reminder About Your Role</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">You are <strong>not</strong> your mentee's evaluator. Your role is non-supervisory, non-evaluative, and confidential. For administrators specifically, name explicitly that what's shared in mentoring stays in mentoring — it doesn't travel into cabinet meetings, evaluation conversations, or informal hallway debriefs with other district leaders.</p>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🤝 Relationship & Goals</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 7: Building a supportive, trusting partnership and beginning the goal-setting process.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Have an initial conversation focused entirely on getting to know your mentee — leadership pathway, prior roles, what drew them to administration at DCS, what they're worried about</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Exchange contact information; agree on a fast-response protocol for high-stakes situations (a board surprise, a staff incident, a media question)</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Schedule recurring meetings — most Year 1 admins do well with weekly or bi-weekly, depending on what their role demands</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Explicitly walk through the confidentiality boundary, especially the parts that are unique to admin mentoring (the overlapping authority piece)</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Begin draft goal-setting: 2–3 areas the new administrator wants to grow in — drawn from their own sense of priorities, anchored to NELP standards if helpful but not as a checklist</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Create a shared calendar or doc for tracking meetings and key dates (board meetings, eval cycles, budget milestones)</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">💚 Well-Being & Belonging</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 8c: Sustaining leadership practice and well-being from day one.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Talk openly about the realistic intensity of an admin August — 12-hour days are common, the volume is real, exhaustion is normal not a sign of failure</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee identify a sustainable pace early — what time they'll leave the building most days, when phone goes off, how weekends work</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Connect them to MASSP, MEMSPA, MASA, or NASSP/NAESP — whichever fits the role. Cross-district peer networks are required (Standard 8c.1), not optional</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help them identify 2–3 admins at the same level in neighboring districts they should reach out to in the first six weeks</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Share district employee assistance and wellness resources</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Watch for the urge to perform certainty in front of staff that the new administrator doesn't actually have — admins who pretend to know everything in August often pay for it in October</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🌐 Culture & Community</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 9c: Connecting your mentee to staff, families, and the broader community and the dynamics that will define the year.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee prepare for the all-staff opening — first impression matters, and "prepared and humble" beats "polished" almost every time</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through the building leadership team your mentee inherits — strengths of each person, roles, prior dynamics, who's been here a while and who's newer</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss the Board of Education — meeting cadence, what shows up on agendas, how the new administrator's role intersects with board work, who carries communication to the board</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through union dynamics with the local DEA chapter — leadership, key contractual provisions affecting building decisions, who to call when something contractual surfaces</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Share context on the Dexter community — what families value, key traditions, what historically lands well or badly in family-facing communications</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss social media presence and visibility expectations — what's appropriate, what district norms exist, what to avoid</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">📚 Instructional Leadership</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 10c: Strengthening leadership practice — instructional supervision, evaluation, and decision-making from the start.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through the teacher evaluation process at DCS — timeline, rubric, observation expectations, what gets formally documented vs. coached informally</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss walkthrough practice — when, how often, what the new administrator is looking for, what the patterns of feedback look like in different staff cultures</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Review the master schedule, course load distribution, and staffing assignments — what your mentee inherited, where there's flexibility for January and beyond</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through any building-level data that shapes priorities — achievement data, attendance, discipline, climate survey results, MTSS data</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss the hiring process — how DCS posts, screens, interviews, and selects; the new administrator's role in late-summer hires</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Review building-level systems for IEP/504 oversight — the new administrator's responsibility for IDEA compliance, how special ed staff coordinate, where the principal sits in 504 disputes</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confirm the framework or rubric used to evaluate this administrator's own performance — the new administrator should know what they're being evaluated against, separate from the mentoring relationship</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #e3f2fd; border-left: 4px solid #2196f3; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="15">
+<tbody><tr><td>
+<strong style="color: #1565c0;">💡 Mentor Tip:</strong>
+<span style="color: #333; font-size: 14px; line-height: 1.5;"> The most powerful thing you can do in August is help your mentee resist the urge to fix things before they understand them. Every system in the building was built by someone for a reason that may not be obvious. Encourage the August posture of "I'm watching how this works" rather than "here's what I'd change." The change can come in January, with eyes open.</span>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Every meeting goes in the log: date, start and end times, topic, both initials. The Human Resources Director signs off at the November 15 and May 1 gate checks. Build the habit now: log right after each meeting.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 August Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Initial relationship-building meeting completed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Recurring meeting schedule established through September</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confidentiality, non-evaluative role, and admin-specific overlapping-authority boundary explicitly discussed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Draft goals identified by mentee (to be refined in September)</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">MASSP/MEMSPA/MASA membership info shared</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">First cross-district peer connections identified (target 2–3 by mid-September)</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">All-staff opening prepared</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Board cycle, union dynamics, and key building data walked through</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Mentor log started — first entry recorded after initial meeting</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+</div>
+</section>
+
+<section id="september" class="page">
+<div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
+<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<tbody><tr><td style="text-align: center; color: white;">
+<h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">September</h1>
+<p style="color: white; font-size: 16px; margin: 0;">First Walkthroughs, Goal-Setting & Board Cycle Awareness</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; margin-bottom: 20px;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td style="width: 60px; vertical-align: top;">
+<div style="width: 50px; height: 50px; background-color: #800020; border-radius: 8px; text-align: center; line-height: 50px; color: white; font-size: 20px;">🍂</div>
+</td>
+<td style="padding-left: 15px; vertical-align: top;">
+<h2 style="color: #333; font-size: 24px; margin: 0 0 5px 0;">September Focus</h2>
+<p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">August was about getting open. September is about starting the actual work — visible in classrooms, finalizing leadership goals, and beginning to understand the rhythm of board meetings, cabinet, and the eval cycle that's about to start in November. The first board meeting of the year falls in September; help your mentee prepare for it.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📌 This Month's Big Move</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Begin a regular walkthrough practice. Help your mentee schedule and protect time in classrooms — short visits, focused on a specific lens (engagement, formative assessment, climate). The point isn't to evaluate; it's to be visible, learn the building from the classroom level, and build relational capital with teachers before the first formal observation cycle starts in November.</p>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🤝 Relationship & Goals</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 7: Building a supportive, trusting partnership — finalizing goals and beginning the rhythm.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Finalize 2–3 leadership goals together — written, specific enough to track, owned by the mentee, anchored to NELP standards or to identified building priorities</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confirm meeting cadence and protect it through September's busy stretch</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Schedule October meetings before September ends</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Have one structured conversation about what success looks like for your mentee at the end of Year 1 — concrete, not aspirational</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue logging every meeting</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">💚 Well-Being & Belonging</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 8c: Sustaining leadership practice and well-being — sustaining through the first wave.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Check in honestly on energy and stress — late September is when the first wave of staff issues, parent concerns, and operational fires arrives</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Watch for the "I should have anticipated that" pattern — admins specifically self-criticize for not predicting things that nobody could have predicted</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee identify which decisions actually need their attention vs. which can be delegated or deferred</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confirm cross-district peer connections are happening — at least one informal coffee or call by end of September</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Specifically name what you've seen them do well — admins rarely get unprompted positive feedback from staff in their first year</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🌐 Culture & Community</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 9c: Connecting your mentee to staff, families, and the broader community — board, cabinet, and the political surface.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through preparation for the first board meeting — what the new administrator presents (if anything), how they sit, what gets surfaced before the meeting and what doesn't</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss cabinet and district-level meetings — who attends, what the new administrator's voice should be in their first months, what to listen for</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee understand the unwritten rules of district leadership — how disagreements are handled, what gets decided in the room vs. in side conversations, who actually holds influence</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue staff introductions and visibility — by end of September, the new administrator should have had at least a brief conversation with every staff member they supervise</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Talk through any community-facing event coming up (Homecoming, family nights) and what the administrator's presence should look like</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">📚 Instructional Leadership</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 10c: Strengthening leadership practice — instructional supervision, evaluation, and decision-making — walkthrough practice and instructional rhythm.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Begin the regular walkthrough practice (see Big Move) — short, focused visits, scheduled into the calendar like any other commitment</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">After early walkthroughs, debrief together: what is your mentee noticing about teaching across the building, what patterns are emerging, what is staff culture telling them</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Review the building's instructional priorities — what was set last year by the predecessor, what your mentee wants to carry forward, what they want to revisit</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss how to handle the first request for instructional guidance from a teacher — when to direct, when to coach, when to defer to instructional coaches or department leads</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through the teacher evaluation calendar — when formal observation cycles begin, what pre-conference looks like, what the new administrator's pace will be</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #e3f2fd; border-left: 4px solid #2196f3; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="15">
+<tbody><tr><td>
+<strong style="color: #1565c0;">💡 Mentor Tip:</strong>
+<span style="color: #333; font-size: 14px; line-height: 1.5;"> When your mentee tells you something a staff member said that frustrated them, resist the urge to validate the frustration. Ask: "What do you think is going on for them?" Helping the new admin shift from staff-as-obstacle to staff-as-context is one of the most important moves of Year 1 — and it almost always comes from a mentor asking the right question.</span>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log every meeting and walkthrough debrief. The November 15 gate check is six weeks away. If you log as you go, sign-off takes minutes.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 September Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Goals finalized and documented (anchored to NELP or identified building priorities)</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walkthrough practice begun and on the calendar</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">First board meeting prepared for and debriefed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Cross-district peer connections in motion</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">October meetings scheduled</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Mentor log up to date</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+</div>
+</section>
+
+<section id="october" class="page">
+<div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
+<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<tbody><tr><td style="text-align: center; color: white;">
+<h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">October</h1>
+<p style="color: white; font-size: 16px; margin: 0;">First Parent Escalation, Conferences & Staff Support</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; margin-bottom: 20px;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td style="width: 60px; vertical-align: top;">
+<div style="width: 50px; height: 50px; background-color: #800020; border-radius: 8px; text-align: center; line-height: 50px; color: white; font-size: 20px;">🎃</div>
+</td>
+<td style="padding-left: 15px; vertical-align: top;">
+<h2 style="color: #333; font-size: 24px; margin: 0 0 5px 0;">October Focus</h2>
+<p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">October is when the first parent escalation arrives in your mentee's office, the first staff conflict that won't resolve itself surfaces, and parent-teacher conferences put extra weight on the building. Your job this month is to help your mentee handle the hard parent call without overcorrecting, support staff through conferences, and notice early signs of decision fatigue.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📌 This Month's Big Move</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Walk your mentee through how to handle a hard parent escalation before one lands — including the structure of the conversation, when to bring in central office, when to defer to the teacher, and how to follow up. A 30-minute role-play of a tough parent meeting will save them hours of anxiety and prevent at least one regrettable email.</p>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🤝 Relationship & Goals</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 7: Building a supportive, trusting partnership — sustaining the partnership and running a mid-month check-in.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Maintain agreed cadence; if it's slipped, get back on track now</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Revisit the September goals — are they still pointing in the right direction now that reality has set in?</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Schedule November meetings; flag the November 15 gate check</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue logging</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">💚 Well-Being & Belonging</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 8c: Sustaining leadership practice and well-being — catching the first wave of decision fatigue.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Ask directly: "What's the hardest part of your week right now?" — then listen without immediately problem-solving</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Watch for the volume of small decisions overwhelming your mentee — one of the most common Year 1 admin patterns is exhaustion not from any single hard decision but from the cumulative weight of dozens of small ones</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help triage: what genuinely needs their attention this week vs. what could wait, be delegated, or be answered with a brief "check with X"</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Talk through the emotional weight of conferences from an admin's seat — being available for hard family meetings, fielding conference fallout, supporting staff who had rough conversations</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Specifically name what you've seen them do well — Year 1 admins rarely see their own progress</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Reaffirm the cross-district peer network — by October, at least one connection should be a real relationship, not just an exchanged email</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🌐 Culture & Community</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 9c: Connecting your mentee to staff, families, and the broader community — family escalations and the political surface.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through how to handle the first hard parent escalation (see Big Move)</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Role-play a difficult conversation: an angry parent, a parent who wants something the school can't or won't do, a parent threatening to escalate to the board</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Coach on the structure of a productive parent meeting: listen first, name what you heard, share what you can do and what you can't, agree on a follow-up</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss when to loop in central office (HR Director, superintendent, legal) — and when not to. Calling in too early erodes credibility; calling in too late creates a mess</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through parent-teacher conference logistics from the admin's seat — building presence, fielding hard conversations, supporting staff who get pulled into them</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss any community context that may surface in conferences — local family dynamics, recent community events that affect family mood</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">📚 Instructional Leadership</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 10c: Strengthening leadership practice — instructional supervision, evaluation, and decision-making — supporting staff through conferences and refining walkthrough practice.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue regular walkthroughs; by October the practice should be visible to staff and predictable</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee notice what walkthrough patterns are showing — which classrooms are humming, which feel off, what supports might be needed before the formal eval cycle starts in November</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss how to support staff who had rough conferences — drop-by check-ins, helping draft follow-up communications, surfacing the kind of administrative backup that builds staff trust</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through any teacher who's already showing signs of struggle — what conversation needs to happen, when, by whom (the admin, an instructional coach, a peer mentor)</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Begin preparing for the formal teacher evaluation cycle that starts in November — pre-conference templates, observation calendar, post-conference structures</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #e3f2fd; border-left: 4px solid #2196f3; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="15">
+<tbody><tr><td>
+<strong style="color: #1565c0;">💡 Mentor Tip:</strong>
+<span style="color: #333; font-size: 14px; line-height: 1.5;"> When your mentee gets their first really hard parent call, resist the urge to immediately strategize. Listen first — they need to vent before they need to problem-solve, and they probably need both more than they need a solution. Ask: "What's making this one stick?" The answer is usually the most useful piece of the conversation.</span>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">The November 15 gate check is roughly four weeks away. If your log is current, it's a quick HR Director review. If it isn't, this is the time to reconstruct what's missing.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 October Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Parent-escalation conversation walked through (with role-play)</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Goals reviewed and revised if needed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Conferences supported (admin presence, staff backup)</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walkthroughs consistently happening and being debriefed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Pre-eval-cycle preparation begun</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Honest well-being check-in completed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">November meetings scheduled; Nov 15 gate check flagged</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Mentor log up to date</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+</div>
+</section>
+
+<section id="november" class="page">
+<div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
+<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<tbody><tr><td style="text-align: center; color: white;">
+<h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">November</h1>
+<p style="color: white; font-size: 16px; margin: 0;">First Gate Check & First Formal Eval Cycle Begins</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; margin-bottom: 20px;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td style="width: 60px; vertical-align: top;">
+<div style="width: 50px; height: 50px; background-color: #800020; border-radius: 8px; text-align: center; line-height: 50px; color: white; font-size: 20px;">🍁</div>
+</td>
+<td style="padding-left: 15px; vertical-align: top;">
+<h2 style="color: #333; font-size: 24px; margin: 0 0 5px 0;">November Focus</h2>
+<p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">November carries two big things: the Nov 15 gate check, and the start of the formal teacher evaluation cycle. The eval cycle is the moment your mentee transitions from being visible in classrooms (walkthroughs) to making formal judgments about practice. Help them get the first cycle right — pre-conference, observation, post-conference — because the patterns set in November tend to hold for the rest of the year.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff5f5; border: 2px solid #d32f2f; border-left: 6px solid #d32f2f; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #d32f2f; margin: 0 0 10px 0; font-size: 16px;">🚨 Gate Check Deadline: November 15</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">By <strong>November 15</strong>, your Human Resources Director needs to initial the first half (Aug–Nov) of your contact log. This is a checkpoint, not the documentation itself — your ongoing log feeds it. If you've been filling in the log after each meeting, this is a quick HR signature. If not, build in time to reconstruct before submission.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📌 This Month's Big Move</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Walk through the first formal teacher observation cycle in detail before it happens — the pre-conference, the observation itself, the post-conference. The goal is for the new administrator to enter that first observation with a clear plan and exit it having given the teacher useful, growth-oriented feedback that's also evaluation-defensible.</p>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🤝 Relationship & Goals</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 7: Building a supportive, trusting partnership — gate check and eval cycle preparation.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Bring your contact log to the HR Director for first-half initials before November 15</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Hold a structured progress review on the September goals — what's working, what isn't, what should be adjusted</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Maintain meetings through the holiday rhythm; the cadence will be tempting to skip in mid-November</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Schedule December meetings, including a check-in before winter break</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue logging</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">💚 Well-Being & Belonging</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 8c: Sustaining leadership practice and well-being — acknowledging fatigue and protecting the holiday season.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Name what you've seen them do well since August — concretely. New admins in November are running on fumes and rarely see their own growth</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Talk through Thanksgiving break — encourage genuine disconnection, not "catch-up on email" time</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Watch for emotional flatness or cynicism, which often appear in November after the post-conference letdown and before the first eval cycle starts</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Check in on whether your mentee has a peer (besides you and the cross-district network) they feel safe vending to about hard days — the loneliness of the role is structural and worth surfacing</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confirm the cross-district peer network is being used — by November, at least monthly contact with at least two peers</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🌐 Culture & Community</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 9c: Connecting your mentee to staff, families, and the broader community — following up on conferences and beginning the second board cycle.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Debrief October's conferences from the admin perspective — what landed, what didn't, which families need follow-up, what staff feedback they got about admin support</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee draft any follow-up communications to families before they sit too long</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss inclusive holiday practices in building communications — how to acknowledge the season without alienating families who don't celebrate the same things</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through November's board meeting — agenda items, the new administrator's role, anything coming up that requires preparation</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue connecting your mentee to colleagues; by November they should feel embedded in the leadership team, not just on it</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">📚 Instructional Leadership</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 10c: Strengthening leadership practice — instructional supervision, evaluation, and decision-making — running the first formal observation cycle.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through the first formal observation cycle (see Big Move) — pre-conference structure, observation focus, post-conference framing</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee anticipate what kinds of feedback land well in DCS staff culture and which kinds create friction — useful information regardless of whether they choose to adjust</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss how to handle a teacher who pushes back on feedback — staying anchored to the rubric without becoming defensive, knowing when to bring HR into the conversation</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Address any teacher already showing signs of struggle who should enter a more structured improvement process — Year 1 admins often delay this conversation; pushing it past November makes it harder, not easier</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss report card / grading-cycle communications and the admin's role when grades surprise families</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #e3f2fd; border-left: 4px solid #2196f3; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="15">
+<tbody><tr><td>
+<strong style="color: #1565c0;">💡 Mentor Tip:</strong>
+<span style="color: #333; font-size: 14px; line-height: 1.5;"> When your mentee finishes their first formal observation, resist the urge to ask whether they "got it right." Ask instead: "What did you notice about your own posture in the post-conference?" The first observation usually teaches the new admin more about themselves than about the teacher. Help them name what they learned about how they show up under pressure.</span>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">If your log has gaps, fix them before the Nov 15 gate check. Going forward, log right after each meeting — December's holiday distractions will eat any habit that isn't already automatic.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 November Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>Nov 15: HR Director has initialed the first half (Aug–Nov) of the contact log</strong></td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Goals progress reviewed and adjusted if needed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">First formal observation cycle completed and debriefed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Conferences debriefed; family follow-ups handled</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Pre-break well-being check-in completed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">December meetings scheduled, including a pre-break touchpoint</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Cross-district peer network active</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Mentor log up to date</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+</div>
+</section>
+
+<section id="december" class="page">
+<div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
+<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<tbody><tr><td style="text-align: center; color: white;">
+<h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">December</h1>
+<p style="color: white; font-size: 16px; margin: 0;">Semester Closure, Holiday Community & Well-Being</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; margin-bottom: 20px;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td style="width: 60px; vertical-align: top;">
+<div style="width: 50px; height: 50px; background-color: #800020; border-radius: 8px; text-align: center; line-height: 50px; color: white; font-size: 20px;">❄️</div>
+</td>
+<td style="padding-left: 15px; vertical-align: top;">
+<h2 style="color: #333; font-size: 24px; margin: 0 0 5px 0;">December Focus</h2>
+<p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">December for an admin is short, fragmented, and emotionally loud. Students are wired, staff are tired, families are stressed, and the building runs at higher volume than any other month. This is not the month for new initiatives. It's the month to help your mentee close the semester cleanly, support staff through the close, and actually rest at the break.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📌 This Month's Big Move</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Have one explicit conversation about how your mentee will rest over winter break. Admins specifically struggle with this because their inbox doesn't pause, parents email through the holidays, and there's always a building issue to worry about. Help them make a concrete plan for how email gets handled, what gets handed off, and when work actually stops.</p>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🤝 Relationship & Goals</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 7: Building a supportive, trusting partnership — closing the semester with a brief but real reflection.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Hold a short semester-closing reflection: what's gone better than expected, what's been hardest, what's worth carrying into second semester</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Schedule a single pre-break touchpoint and a first-week-of-January meeting before everyone scatters</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Skip new structural work this month</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue logging — even short check-ins count</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">💚 Well-Being & Belonging</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 8c: Sustaining leadership practice and well-being — the most important domain of the month.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Have the rest conversation (see Big Move) — concrete plan, not vague intention</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee separate work that genuinely needs to be finished before break from work they're telling themselves needs to be finished — there's almost always a category collapse</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Acknowledge that holiday family obligations stack on top of December exhaustion in ways that aren't fair but are real</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Celebrate what they've actually accomplished — by name, in specifics. They will not give themselves credit; you have to</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">If you sense real struggle (persistent low affect, hopelessness, talk of leaving the role), gently surface it and connect them to district employee assistance resources</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confirm the cross-district peer network has had a December check-in — peer support over break matters</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🌐 Culture & Community</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 9c: Connecting your mentee to staff, families, and the broader community — staff support and inclusive practice.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss how the new administrator can support staff through December — visibility in classrooms, gestures of appreciation that are real and not performative, being present in the building</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through inclusive holiday practices — how to acknowledge the season in building communications, what staff celebrations look like, what to avoid</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Talk through end-of-semester routines for securing the building — what happens to the building over break, who's on call, how emergencies route</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Review winter weather protocols — closures, delays, communication chain — before the first one happens</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss December's board meeting (if there is one) — what the new administrator presents, what to expect</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">📚 Instructional Leadership</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 10c: Strengthening leadership practice — instructional supervision, evaluation, and decision-making — closing the semester cleanly without overloading the runway.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Coach on managing the building's energy in the days before break — the work still needs to happen, but engagement strategies matter more than content density</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee plan how the semester closes for staff — final faculty meeting, semester-end communications, anything that needs to be tied off</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through semester grade submission timelines and any escalations admins might be pulled into when grades surprise families</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Encourage your mentee to document one or two leadership moves that worked particularly well this semester — they'll want this in January when re-energy is needed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confirm any teacher in the formal eval cycle has clear next steps documented before break</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #e3f2fd; border-left: 4px solid #2196f3; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="15">
+<tbody><tr><td>
+<strong style="color: #1565c0;">💡 Mentor Tip:</strong>
+<span style="color: #333; font-size: 14px; line-height: 1.5;"> Send a short message at the start of break — "Have a great break, see you in January, no need to reply." It signals you're a steady presence, not another inbox they need to manage. Then actually leave them alone until January, unless they reach out.</span>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Even brief, informal check-ins count and should be logged. December meetings tend to be shorter — log them all, even if the entry is two lines.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 December Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Semester-closing reflection completed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Explicit rest plan discussed before break</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Inclusive holiday practices and staff support discussed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Building closure procedures and weather protocols confirmed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Semester grade closure handled</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">First January meeting scheduled before break</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Mentor log up to date</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+</div>
+</section>
+
+<section id="january" class="page">
+<div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
+<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<tbody><tr><td style="text-align: center; color: white;">
+<h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">January</h1>
+<p style="color: white; font-size: 16px; margin: 0;">Mid-Year Reset & Budget Cycle Begins</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; margin-bottom: 20px;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td style="width: 60px; vertical-align: top;">
+<div style="width: 50px; height: 50px; background-color: #800020; border-radius: 8px; text-align: center; line-height: 50px; color: white; font-size: 20px;">🎊</div>
+</td>
+<td style="padding-left: 15px; vertical-align: top;">
+<h2 style="color: #333; font-size: 24px; margin: 0 0 5px 0;">January Focus</h2>
+<p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">January is a real opportunity to reset — but it's also the month the budget cycle begins in earnest. Your mentee will be balancing reconnecting with staff after break, mid-year goal review, and starting to think about what next year's building or department needs in financial terms. Help them sequence these without trying to do all of it in week one.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📌 This Month's Big Move</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Conduct a structured mid-year goal review against the goals you set in September. What's been accomplished, what's been quietly abandoned, what should be revised, what new goal should emerge for second semester? Document the updated goals — this is exactly the kind of artifact MCL 380.1249b documentation expects.</p>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🤝 Relationship & Goals</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 7: Building a supportive, trusting partnership — mid-year goal revision and re-establishing rhythm.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Hold the structured mid-year goal review (see Big Move) — write the updated goals down so they're as concrete as the originals</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Resume agreed cadence; the cadence matters more than duration</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Schedule meetings through March</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Begin the Year 2 conversation lightly — what does mentoring look like next year, what continues, what shifts</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue logging</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">💚 Well-Being & Belonging</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 8c: Sustaining leadership practice and well-being — returning rested and staying that way.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Genuinely ask how break went — and listen to the answer</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee identify one or two non-negotiable boundaries for second semester (a hard stop in the evening, a no-email weekend day, a peer call once a month)</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Celebrate the milestone — they made it through one full semester as an administrator, which most people never do</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Watch for any indicators that the break didn't actually serve as a break — flat affect, dread about returning, talk of leaving the role</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confirm cross-district peer network is meeting — January is when these connections deepen or fade; help your mentee invest the time</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🌐 Culture & Community</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 9c: Connecting your mentee to staff, families, and the broader community — re-establishing community after the break.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee re-establish presence in the building — a visible week of walkthroughs and staff visits goes a long way after break</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through any new students or staff transitions for second semester</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss any DCS-wide changes for second semester — schedule shifts, new initiatives, district-level moves that affect the building</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Begin the second-semester family communication rhythm — what families typically expect to hear about, what should be proactive vs. responsive</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through January board meeting — what's on the agenda, what role the new administrator plays</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">📚 Instructional Leadership</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 10c: Strengthening leadership practice — instructional supervision, evaluation, and decision-making — using first-semester data and starting the budget conversation.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Look at first-semester data together — staff evaluation patterns, student data, climate signals. What is the data telling them that wasn't visible in September?</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Begin the budget cycle conversation — what your mentee's role is in the budget build, what timeline they're working against, what decisions they need to be ready to make</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through any staffing implications visible at this point — what next year's staffing needs look like, what hiring is likely to be required</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue the formal evaluation cycle — by January, mid-cycle observations should be completed for staff being formally evaluated this year</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee distinguish between practices that didn't work and practices they didn't give time to take hold</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #e3f2fd; border-left: 4px solid #2196f3; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="15">
+<tbody><tr><td>
+<strong style="color: #1565c0;">💡 Mentor Tip:</strong>
+<span style="color: #333; font-size: 14px; line-height: 1.5;"> When your mentee says "I want to change everything for second semester," gently push back. Ask: "What's actually working that you don't want to lose?" The answer is almost always longer than they expect — and protecting those things is just as important as fixing what isn't.</span>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Document the mid-year goal review specifically — both the original September goals and the updated January goals. This is core MCL 380.1249b documentation.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 January Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Mid-year goal review completed and updated goals documented</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">First-semester data reviewed together</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Budget cycle role and timeline understood</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Second-semester building rhythm re-established</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Sustainable boundaries for second semester identified</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Cross-district peer connections still active</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Meetings scheduled through March</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+</div>
+</section>
+
+<section id="february" class="page">
+<div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
+<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<tbody><tr><td style="text-align: center; color: white;">
+<h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">February</h1>
+<p style="color: white; font-size: 16px; margin: 0;">Eval Cycle Heavy Lift & Hiring Planning</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; margin-bottom: 20px;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td style="width: 60px; vertical-align: top;">
+<div style="width: 50px; height: 50px; background-color: #800020; border-radius: 8px; text-align: center; line-height: 50px; color: white; font-size: 20px;">💝</div>
+</td>
+<td style="padding-left: 15px; vertical-align: top;">
+<h2 style="color: #333; font-size: 24px; margin: 0 0 5px 0;">February Focus</h2>
+<p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">February is the heaviest month of the formal teacher evaluation cycle for most admins — most observations are happening, post-conferences are stacking up, and end-of-cycle summative work is on the horizon. Hiring conversations also begin in earnest as next-year staffing becomes clearer. Help your mentee balance the eval workload with the hiring planning without dropping either.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📌 This Month's Big Move</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Walk through how your mentee is going to handle the heaviest stretch of the eval cycle — calendar management, post-conference quality, what stays formal vs. what can be folded into a coaching conversation. Year 1 admins often try to do every observation at maximum depth and burn out by March.</p>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🤝 Relationship & Goals</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 7: Building a supportive, trusting partnership — sustaining the cadence with a focus on eval workload.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Maintain meetings; the agenda this month is mostly eval-cycle and hiring</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Use one meeting for a substantial debrief on the eval cycle — what's working, what's draining them, what they want to do differently in March</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue logging</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">💚 Well-Being & Belonging</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 8c: Sustaining leadership practice and well-being — pacing through the heaviest workload month.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee see specific growth from August to now — name the change, not just the progress</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Watch for mid-winter slumps; admins specifically can spiral when eval-cycle volume meets seasonal fatigue</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Encourage them to plan one energizing thing this month — a peer visit to another district, attending a MASSP/MEMSPA event, presenting on something they've learned</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confirm the cross-district peer network is still active — February is when these connections matter most, and also when they're easiest to drop</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🌐 Culture & Community</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 9c: Connecting your mentee to staff, families, and the broader community — cross-building and cross-district connection.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Push for visible engagement beyond the building — a district committee, a presentation, a cross-building collaboration</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss summer PD with deadlines coming up — what would expand their thinking, not just refine it</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help them identify a colleague outside the district whose practice they admire and should connect with</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through any community-facing event in February (school of choice deadline, family event)</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">📚 Instructional Leadership</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 10c: Strengthening leadership practice — instructional supervision, evaluation, and decision-making — eval cycle execution and hiring planning.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee work through eval cycle calendar management — sequencing observations, post-conferences, summative work</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss how to give a teacher feedback they don't want to hear — staying anchored to the rubric, holding the conversation when the teacher pushes back, knowing when HR needs to be involved</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Begin hiring planning — what positions are likely to open, what kind of candidate fits the building, how the new administrator will lead the hiring process</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through district hiring procedures, posting timelines, screening practices — by mid-February, postings for the next year are typically going up</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue refining walkthrough practice based on the eval cycle data</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #e3f2fd; border-left: 4px solid #2196f3; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="15">
+<tbody><tr><td>
+<strong style="color: #1565c0;">💡 Mentor Tip:</strong>
+<span style="color: #333; font-size: 14px; line-height: 1.5;"> Year 1 admins almost always over-invest in eval cycle observations at the expense of hiring. The eval cycle has hard deadlines and the hiring cycle feels softer — but a bad hire costs the building for years, while a thinly-written observation costs almost nothing. Help your mentee push back on the urgency illusion.</span>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Document the eval cycle debrief specifically — what your mentee learned about giving feedback, holding hard conversations, sequencing the work. This is meaningful artifact for Year 2.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 February Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Eval cycle pacing reviewed and adjusted if needed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Hiring planning underway — positions identified, posting timeline understood</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Substantial eval-cycle debrief completed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Visible engagement beyond the building identified</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Mid-winter well-being check-in completed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Mentor log up to date</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+</div>
+</section>
+
+<section id="march" class="page">
+<div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
+<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<tbody><tr><td style="text-align: center; color: white;">
+<h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">March</h1>
+<p style="color: white; font-size: 16px; margin: 0;">Hiring Round, Master Schedule & Spring Planning</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; margin-bottom: 20px;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td style="width: 60px; vertical-align: top;">
+<div style="width: 50px; height: 50px; background-color: #800020; border-radius: 8px; text-align: center; line-height: 50px; color: white; font-size: 20px;">🌸</div>
+</td>
+<td style="padding-left: 15px; vertical-align: top;">
+<h2 style="color: #333; font-size: 24px; margin: 0 0 5px 0;">March Focus</h2>
+<p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">March is hiring month. Postings are live, interviews start mid-month, and the new administrator is making decisions that will shape next year's building. The master schedule for next year also typically gets built in March or early April. This is the month where your mentee's Year 1 decisions become Year 2's reality.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📌 This Month's Big Move</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Help your mentee build their hiring approach before the first interview — what they're actually looking for, how they'll structure the conversation, what red flags matter and which they can live with, how decisions get made when it's a close call. Year 1 admins often default to a checklist; help your mentee develop a real point of view about what makes a strong hire for this specific building.</p>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🤝 Relationship & Goals</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 7: Building a supportive, trusting partnership — steady cadence through the heaviest decision month.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Maintain meetings through spring break disruptions</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Be available between regular meetings if a hiring or scheduling decision needs a thinking partner</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Schedule April meetings — protect a check-in before testing begins</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Begin the Year 2 conversation with more weight — what does mentoring look like, what shifts in Year 2</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue logging</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">💚 Well-Being & Belonging</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 8c: Sustaining leadership practice and well-being — pacing for the home stretch.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Talk through spring break plans — encourage genuine rest, not catch-up; the April-May stretch is brutal and they'll need the reserves</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Watch for late-winter exhaustion; if your mentee is talking about leaving the role in March, listen carefully — this is a high-attrition window</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help anticipate testing-season stress before it arrives — admins coordinate accommodations, manage building logistics, and absorb staff anxiety on top of their own</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confirm the cross-district peer network has been used in February — by March, the peer connections should be a real part of how your mentee processes the role</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🌐 Culture & Community</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 9c: Connecting your mentee to staff, families, and the broader community — spring rhythms and emerging leadership.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through any spring conference schedule, building events, or family-facing activities the administrator is responsible for</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee prepare for the spring board meeting cycle — what's typically on agendas in March/April, what role they play</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Surface any opportunities to take on small leadership beyond the building — leading a district committee, presenting at a regional event</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss end-of-year family communication and how it's typically sequenced</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">📚 Instructional Leadership</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 10c: Strengthening leadership practice — instructional supervision, evaluation, and decision-making — hiring, master schedule, and pre-testing logistics.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through the hiring approach (see Big Move)</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss interview structure — what questions surface fit vs. competence, how to read what's not said, when to bring a second interviewer in</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Begin master schedule conversations for next year — what your mentee inherited, what they want to change, what's possible given staffing realities</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through state testing logistics from the admin's seat — building setup, testing schedule, accommodations coordination, security protocols</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue the formal eval cycle toward summative work</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #e3f2fd; border-left: 4px solid #2196f3; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="15">
+<tbody><tr><td>
+<strong style="color: #1565c0;">💡 Mentor Tip:</strong>
+<span style="color: #333; font-size: 14px; line-height: 1.5;"> By March, your mentee may be more confident in their hiring decisions than their experience justifies. That's fine, mostly — but it's also the moment when overconfidence can lead to a bad hire. Your job isn't to dampen their growing sense of judgment; it's to be the trusted voice that asks "are you sure?" when it matters.</span>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">May 1 gate check is six weeks away. Keep the log current.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 March Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Hiring approach articulated and first interviews completed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Master schedule planning begun for next year</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Spring break rest plan discussed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Pre-testing well-being check-in completed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">April meetings scheduled, including pre-testing check-in</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 2 mentoring conversation begun</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+</div>
+</section>
+
+<section id="april" class="page">
+<div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
+<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<tbody><tr><td style="text-align: center; color: white;">
+<h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">April</h1>
+<p style="color: white; font-size: 16px; margin: 0;">Testing Season, Year-End Evals & Documentation</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; margin-bottom: 20px;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td style="width: 60px; vertical-align: top;">
+<div style="width: 50px; height: 50px; background-color: #800020; border-radius: 8px; text-align: center; line-height: 50px; color: white; font-size: 20px;">🌷</div>
+</td>
+<td style="padding-left: 15px; vertical-align: top;">
+<h2 style="color: #333; font-size: 24px; margin: 0 0 5px 0;">April Focus</h2>
+<p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">April is testing month, and from the admin's seat that means coordinating logistics, supporting staff under pressure, and handling whatever emerges in real time. Summative evaluations also wrap up this month for many staff. The May 1 gate check approaches, and the year-end documentation is meaningful — it's not just compliance, it's the artifact that anchors Year 2.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff5f5; border: 2px solid #d32f2f; border-left: 6px solid #d32f2f; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #d32f2f; margin: 0 0 10px 0; font-size: 16px;">🚨 Gate Check Deadline: May 1</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">By <strong>May 1</strong>, the HR Director needs to initial the second half (Dec–May) of your contact log, and year-end total hours should be filled in. Plan to wrap by mid-to-late April; do not save this for the last day, when end-of-year tasks and contract renewals will compete for the same time.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📌 This Month's Big Move</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Total your contact log hours, sit down with your mentee to review the year, and bring the log to the HR Director for second-half initials. Treat this as a structured look at the year together — the documentation is more meaningful when reviewed as a conversation about growth.</p>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🤝 Relationship & Goals</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 7: Building a supportive, trusting partnership — year-end documentation and the bridge to Year 2.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Maintain meetings; testing-week meetings can be shorter, but don't skip them</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Review the year's goal progression together — September goals, January revisions, where things landed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Total log hours, review with mentee, get HR Director initials before May 1</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confirm the Year 2 plan — continue, transition, or move toward more independence</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Continue logging</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">💚 Well-Being & Belonging</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 8c: Sustaining leadership practice and well-being — holding steady through the most fragmented month.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Acknowledge testing-season exhaustion — coordinating accommodations and absorbing staff anxiety is mentally draining</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help separate identity from test results — what students score is not a verdict on the new administrator's leadership</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Specifically name what they've grown into this year — not in a year-end speech, but in a real conversation</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Begin gently surfacing what they want next year to look like</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confirm the cross-district peer network has a plan for summer — these relationships need to be maintained, not paused</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🌐 Culture & Community</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 9c: Connecting your mentee to staff, families, and the broader community — holding the building together through schedule disruption.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee maintain visibility through testing weeks — staff need to see admin presence even when the schedule is fragmented</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through end-of-year procedures, spring drills, weather contingencies</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss family communication around testing — what parents may ask, what students may bring home, how to respond</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Begin planning the year-end staff appreciation rhythm — what works, what's performative, what's appropriate for budget</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">📚 Instructional Leadership</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 10c: Strengthening leadership practice — instructional supervision, evaluation, and decision-making — testing-season leadership and final eval work.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through testing logistics in detail: building setup, accommodations coordination, security protocols, what to do when something goes wrong</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee balance testing-support work with finalizing summative evaluations and contract recommendations</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Plan post-testing instructional pivots — what comes after testing should feel like a return to real work, not a coast to summer</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss any teacher in the formal eval cycle whose summative will be a hard conversation — when, how, with what HR involvement</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confirm hiring is wrapping up; what positions are still open, what the path to fill them is</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #e3f2fd; border-left: 4px solid #2196f3; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="15">
+<tbody><tr><td>
+<strong style="color: #1565c0;">💡 Mentor Tip:</strong>
+<span style="color: #333; font-size: 14px; line-height: 1.5;"> When test scores eventually come back, your mentee will read them as a verdict on their leadership. Help them see what scores actually measure, what they don't, and what role first-year context plays. The most useful frame: scores are one source of evidence among many, not the scoreboard.</span>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Total hours and get HR Director initials by mid-to-late April. Pulling the log together while testing is happening creates exactly the time crunch this gate check is supposed to prevent.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 April Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>May 1: Year-end total hours filled in; HR Director initials on second half of contact log</strong></td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Final summative evaluations on track for completion</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Testing logistics walked through before testing begins</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Hiring round closing out; remaining positions identified</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year-end well-being check-in completed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">May closing meeting scheduled</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+</div>
+</section>
+
+<section id="may" class="page">
+<div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
+<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<tbody><tr><td style="text-align: center; color: white;">
+<h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">May</h1>
+<p style="color: white; font-size: 16px; margin: 0;">Year-End Closure, Contract Renewals & Summer Transition</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; margin-bottom: 20px;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td style="width: 60px; vertical-align: top;">
+<div style="width: 50px; height: 50px; background-color: #800020; border-radius: 8px; text-align: center; line-height: 50px; color: white; font-size: 20px;">🌺</div>
+</td>
+<td style="padding-left: 15px; vertical-align: top;">
+<h2 style="color: #333; font-size: 24px; margin: 0 0 5px 0;">May Focus</h2>
+<p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">May closes Year 1. Contract renewals, final summative work, end-of-year community moments, and the planning for next year happen at the same time. Your mentee made it. Help them see the year for what it actually was, make a concrete Year 2 plan, and build a real summer that resembles rest more than catch-up.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📌 This Month's Big Move</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Hold a structured year-end reflection across all four domains. Then make a concrete Year 2 plan — same mentor, different mentor, or movement toward more independence. Don't let the Year 2 conversation default; surface it directly.</p>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🤝 Relationship & Goals</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 7: Building a supportive, trusting partnership — closing the year and planning Year 2.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Complete May 1 documentation if not done in April</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Hold a structured year-end reflection across all four domains — what grew, what stayed flat, what surprised them</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Make the concrete Year 2 plan</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee draft Year 2 goals while this year is still fresh</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Close the relationship with intention — a final meeting, a written acknowledgment, a real handoff to whatever Year 2 looks like</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">💚 Well-Being & Belonging</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 8c: Sustaining leadership practice and well-being — real recognition and a real summer.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Recognize the milestone — completing the first year as an administrator is genuinely a big deal</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee plan a real summer with the benefit of last year's lesson — what protected time, what professional reading, what has nothing to do with school</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss summer professional development genuinely — what would energize them vs. what would feel like another obligation</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Reaffirm professional identity that has emerged this year — name what kind of leader they've become, in concrete terms</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">If you sense any wavering about returning, surface it gently — May is when retention conversations are most useful</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">🌐 Culture & Community</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 9c: Connecting your mentee to staff, families, and the broader community — closing the year with staff, families, and the board.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through end-of-year procedures: faculty close-out, summer building access, end-of-year staff appreciation</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee plan a meaningful close with staff — recognition that's real, not performative</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss any final family communications — graduation, transition information for families with kids moving up</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through the spring board meeting cycle — what gets reported, what next year's plans are presented</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss summer hiring rounds for any positions still open — the timeline doesn't pause for vacation</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 5px 0; font-size: 22px; border-bottom: 2px solid #800020; padding-bottom: 5px;">📚 Instructional Leadership</h3>
+<p style="color: #666; font-size: 13px; margin: 0 0 15px 0; font-style: italic;">Standard 10c: Strengthening leadership practice — instructional supervision, evaluation, and decision-making — capturing what worked and planning next year.</p>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Help your mentee archive what worked this year — leadership moves, structures, communication templates they'll want to reuse</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Encourage a written reflection — even a short one — naming what they want to keep, change, and abandon</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Confirm all summative evaluations and contract recommendations are documented</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Discuss next year's instructional priorities — what carries forward from this year, what shifts based on what they learned</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Walk through summer planning rhythms — when to start thinking about next year, when not to</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #e3f2fd; border-left: 4px solid #2196f3; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="15">
+<tbody><tr><td>
+<strong style="color: #1565c0;">💡 Mentor Tip:</strong>
+<span style="color: #333; font-size: 14px; line-height: 1.5;"> Don't end the relationship with a fade-out. Even if you're continuing as their mentor next year, mark the end of this year explicitly — a real "here's what I saw you do this year" conversation. Closure is part of the work, not an extra. For Year 2, the relationship will look different; that's appropriate. Year 1's close should hold its own weight.</span>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">If not already done in April, total contact log hours and get HR Director initials. Save your completed log somewhere accessible. If you mentor the same person next year, it's the foundation for August. If a new mentor takes over, it's a meaningful handoff document.</p>
+</td></tr></tbody></table>
+
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20">
+<tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 May Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Total log hours and HR Director initials done (if not finished in April)</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year-end reflection across all four domains completed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 2 mentoring decision made (continue, transition, or move toward independence)</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 2 goals drafted while this year is still fresh</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Final summative evaluations and contract recommendations documented</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year-end celebration or acknowledgment with mentee completed</td></tr><tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Final contact log entries added; log saved for handoff or Year 2</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+</div>
+</section>
+</div>
+<script>
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.target;
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(target).classList.add('active');
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+});
+</script>
+</body>
+</html>
