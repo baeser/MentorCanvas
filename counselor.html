@@ -43,18 +43,21 @@
   a { color: #800020; }
   .nav-sticky {
     position: sticky; top: 0; background: #fbfbfb; z-index: 10;
-    padding-bottom: 4px; margin-bottom: 20px;
+    padding-top: 8px; padding-bottom: 8px;
+    border-bottom: 3px solid #800020; margin-bottom: 24px;
   }
   .year-selector {
-    display: flex; gap: 6px; margin-bottom: 8px; padding-top: 8px;
+    display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;
   }
   .year-btn {
-    padding: 6px 18px; background: #f8f9fa; border: 2px solid #caa217;
-    border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: bold;
-    color: #800020; font-family: Arial, sans-serif; transition: all 0.2s ease;
+    padding: 8px 22px; background: white;
+    border: 2px solid #800020; border-radius: 20px;
+    cursor: pointer; font-size: 14px; font-weight: bold;
+    color: #800020; font-family: Arial, sans-serif;
+    transition: all 0.2s ease;
   }
-  .year-btn:hover { background: #fff8dc; }
-  .year-btn.active { background: #800020; color: white; border-color: #800020; }
+  .year-btn:hover { background: #fbeaef; }
+  .year-btn.active { background: #800020; color: white; }
   @media print {
     .nav-tabs, .population-nav, .nav-sticky { display: none; }
     .page { display: block !important; page-break-after: always; }
@@ -73,10 +76,10 @@
 </nav>
 
 <div class="nav-sticky">
-<div class="year-selector">
-  <button class="year-btn active" data-year="y1">Year 1</button>
-  <button class="year-btn" data-year="y2">Year 2</button>
-  <button class="year-btn" data-year="y3">Year 3</button>
+<div class="year-selector" aria-label="Year selector">
+  <button class="year-btn active" data-year="y1">Year 1 · Foundation</button>
+  <button class="year-btn" data-year="y2">Year 2 · Refinement</button>
+  <button class="year-btn" data-year="y3">Year 3 · Independence</button>
 </div>
 <nav class="nav-tabs" aria-label="Program sections">
 <button class="tab-btn active" data-month="overview">Overview</button>
