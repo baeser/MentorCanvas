@@ -7,7 +7,16 @@
 <style>
   * { box-sizing: border-box; }
   body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fbfbfb; color: #333; }
-  .program-wrapper { max-width: 1100px; margin: 0 auto; padding: 20px; }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url('dcs-logo.png') repeat center/160px;
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .program-wrapper { max-width: 1100px; margin: 0 auto; padding: 20px; position: relative; z-index: 1; }
   .population-nav {
     display: flex; gap: 0; margin-bottom: 16px;
     background: #f1ebd8; border: 1px solid #caa217; border-radius: 8px;
@@ -233,7 +242,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-august" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">August</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Onboarding, Role Clarification & ASCA Orientation</p>
@@ -313,7 +322,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-september" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">September</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Goal-Setting, First Case Consultation & Year Planning</p>
@@ -386,7 +395,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-october" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">October</h1>
 <p style="color: white; font-size: 16px; margin: 0;">First ASCA Alignment Audit & MTSS Engagement</p>
@@ -459,7 +468,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-november" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">November</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Mid-Year Reflection & First Gate Check</p>
@@ -541,7 +550,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-december" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">December</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Crisis-Readiness, Semester Closure & Well-Being</p>
@@ -614,7 +623,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-january" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">January</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Mid-Year Goal Review & Second-Semester Reset</p>
@@ -687,7 +696,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-february" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">February</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Mindsets & Behaviors Integration, Stretch Practice</p>
@@ -760,7 +769,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-march" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">March</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Second ASCA Alignment Audit & Spring Scheduling</p>
@@ -833,7 +842,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-april" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">April</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Testing-Season Counselor Role & Documentation</p>
@@ -912,7 +921,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-may" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">May</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Year-End Reflection & Looking Ahead</p>

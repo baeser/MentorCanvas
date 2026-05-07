@@ -7,7 +7,16 @@
 <style>
   * { box-sizing: border-box; }
   body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fbfbfb; color: #333; }
-  .program-wrapper { max-width: 1100px; margin: 0 auto; padding: 20px; }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url('dcs-logo.png') repeat center/160px;
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .program-wrapper { max-width: 1100px; margin: 0 auto; padding: 20px; position: relative; z-index: 1; }
   .population-nav {
     display: flex; gap: 0; margin-bottom: 16px;
     background: #f1ebd8; border: 1px solid #caa217; border-radius: 8px;
@@ -274,7 +283,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-august" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">August</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Opening, Late Hires, All-Staff PD & Establishing Presence</p>
@@ -354,7 +363,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-september" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">September</h1>
 <p style="color: white; font-size: 16px; margin: 0;">First Walkthroughs, Goal-Setting & Board Cycle Awareness</p>
@@ -427,7 +436,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-october" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">October</h1>
 <p style="color: white; font-size: 16px; margin: 0;">First Parent Escalation, Conferences & Staff Support</p>
@@ -500,7 +509,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-november" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">November</h1>
 <p style="color: white; font-size: 16px; margin: 0;">First Gate Check & First Formal Eval Cycle Begins</p>
@@ -582,7 +591,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-december" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">December</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Semester Closure, Holiday Community & Well-Being</p>
@@ -655,7 +664,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-january" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">January</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Mid-Year Reset & Budget Cycle Begins</p>
@@ -728,7 +737,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-february" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">February</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Eval Cycle Heavy Lift & Hiring Planning</p>
@@ -801,7 +810,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-march" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">March</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Hiring Round, Master Schedule & Spring Planning</p>
@@ -874,7 +883,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-april" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">April</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Testing Season, Year-End Evals & Documentation</p>
@@ -953,7 +962,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y1-may" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">May</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Year-End Closure, Contract Renewals & Summer Transition</p>
@@ -1026,7 +1035,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y2-august" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">August · Year 2</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Second Opening — Building on What You Built</p>
 </td></tr></tbody></table>
@@ -1111,7 +1120,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y2-september" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">September · Year 2</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Deeper Goals, Mentee-Set Agendas, Refined Walkthrough Lens</p>
 </td></tr></tbody></table>
@@ -1186,7 +1195,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y2-october" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">October · Year 2</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Earned Confidence, Reflective Debrief, Second Conferences</p>
 </td></tr></tbody></table>
@@ -1260,7 +1269,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y2-november" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">November · Year 2</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Second Gate Check &amp; Pattern Recognition Across Years</p>
 </td></tr></tbody></table>
@@ -1340,7 +1349,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y2-december" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">December · Year 2</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Mentee-Led Semester Close &amp; Better Boundaries</p>
 </td></tr></tbody></table>
@@ -1408,7 +1417,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y2-january" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">January · Year 2</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Data-Informed Mid-Year Review &amp; Year 3 Transition Conversation</p>
 </td></tr></tbody></table>
@@ -1477,7 +1486,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y2-february" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">February · Year 2</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Second Eval Heavy Lift &amp; Case-Study Debrief</p>
 </td></tr></tbody></table>
@@ -1544,7 +1553,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y2-march" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">March · Year 2</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Second Hiring Round &amp; Master Schedule Ownership</p>
 </td></tr></tbody></table>
@@ -1614,7 +1623,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y2-april" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">April · Year 2</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Mid-Program Review, Gate Check &amp; Year 3 Plan Solidified</p>
 </td></tr></tbody></table>
@@ -1679,7 +1688,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 <section id="y2-may" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
-<table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
+<table style="width: 100%; background: url('dcs-logo.png') center/15% no-repeat #800020; background-blend-mode: multiply; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20"><tbody><tr><td style="text-align: center; color: white;">
 <h1 style="color: white; font-size: 28px; margin: 0 0 10px 0;">May · Year 2</h1>
 <p style="color: white; font-size: 16px; margin: 0;">Year 2 Close — Ready for Independence</p>
 </td></tr></tbody></table>
