@@ -41,8 +41,22 @@
   .page { display: none; }
   .page.active { display: block; }
   a { color: #800020; }
+  .nav-sticky {
+    position: sticky; top: 0; background: #fbfbfb; z-index: 10;
+    padding-bottom: 4px; margin-bottom: 20px;
+  }
+  .year-selector {
+    display: flex; gap: 6px; margin-bottom: 8px; padding-top: 8px;
+  }
+  .year-btn {
+    padding: 6px 18px; background: #f8f9fa; border: 2px solid #caa217;
+    border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: bold;
+    color: #800020; font-family: Arial, sans-serif; transition: all 0.2s ease;
+  }
+  .year-btn:hover { background: #fff8dc; }
+  .year-btn.active { background: #800020; color: white; border-color: #800020; }
   @media print {
-    .nav-tabs, .population-nav { display: none; }
+    .nav-tabs, .population-nav, .nav-sticky { display: none; }
     .page { display: block !important; page-break-after: always; }
   }
 </style>
@@ -56,19 +70,26 @@
   <a href="administrator.html">Administrator</a>
 </nav>
 
+<div class="nav-sticky">
+<div class="year-selector">
+  <button class="year-btn active" data-year="y1">Year 1</button>
+  <button class="year-btn" data-year="y2">Year 2</button>
+  <button class="year-btn" data-year="y3">Year 3</button>
+</div>
 <nav class="nav-tabs" aria-label="Program sections">
-<button class="tab-btn active" data-target="overview">Overview</button>
-<button class="tab-btn" data-target="august">August</button>
-<button class="tab-btn" data-target="september">September</button>
-<button class="tab-btn" data-target="october">October</button>
-<button class="tab-btn" data-target="november">November</button>
-<button class="tab-btn" data-target="december">December</button>
-<button class="tab-btn" data-target="january">January</button>
-<button class="tab-btn" data-target="february">February</button>
-<button class="tab-btn" data-target="march">March</button>
-<button class="tab-btn" data-target="april">April</button>
-<button class="tab-btn" data-target="may">May</button>
+<button class="tab-btn active" data-month="overview">Overview</button>
+<button class="tab-btn" data-month="august">August</button>
+<button class="tab-btn" data-month="september">September</button>
+<button class="tab-btn" data-month="october">October</button>
+<button class="tab-btn" data-month="november">November</button>
+<button class="tab-btn" data-month="december">December</button>
+<button class="tab-btn" data-month="january">January</button>
+<button class="tab-btn" data-month="february">February</button>
+<button class="tab-btn" data-month="march">March</button>
+<button class="tab-btn" data-month="april">April</button>
+<button class="tab-btn" data-month="may">May</button>
 </nav>
+</div>
 
 <section id="overview" class="page active">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
@@ -106,7 +127,8 @@
 <tbody><tr><td>
 <h3 style="color: #800020; margin: 0 0 10px 0; font-size: 18px;">📓 Mentor–Mentee Contact Log</h3>
 <p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0 0 10px 0;">Every mentor pair maintains a contact log throughout the year. Each meeting is a row: date, start and end times, topic or activity, and both mentor and mentee initials.</p>
-<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Building principal sign-off happens at two gate checks: <strong>November 15</strong> for the first half (Aug–Nov) and <strong>May 1</strong> for the second half (Dec–May), with year-end total hours filled in at the close.</p>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0 0 15px 0;">Building principal sign-off happens at two gate checks: <strong>November 15</strong> for the first half (Aug–Nov) and <strong>May 1</strong> for the second half (Dec–May), with year-end total hours filled in at the close. DCS requires three full years of mentoring for new counselors — the same contact log structure applies in Years 2 and 3.</p>
+<p style="margin: 0;"><a href="https://docs.google.com/document/d/1syu5PKT4rjbXWiq1okFSbnBl4O8aNscj-waozhm6mkk/copy?tab=t.0" target="_blank" style="display: inline-block; background-color: #800020; color: white; padding: 10px 18px; text-decoration: none; border-radius: 5px; font-weight: bold;">Make a Copy of the Contact Log →</a></p>
 </td></tr></tbody></table>
 
 <h3 style="color: #800020; margin: 30px 0 15px 0; font-size: 22px;">The Four Domains of Mentoring Practice</h3>
@@ -164,6 +186,38 @@
 </tbody></table>
 </td></tr></tbody></table>
 
+<h3 style="color: #800020; margin: 30px 0 15px 0; font-size: 22px;">📅 Year 2 at a Glance</h3>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>August:</strong> Year 2 Agreement, Caseload Review &amp; Pattern Recognition</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>September:</strong> Deepening Goals, Intentional Practice Focus</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>October:</strong> ASCA Alignment Audit (Depth) &amp; MTSS Leadership Role</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>November:</strong> Second Gate Check &amp; Peer Consultation Habits</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>December:</strong> Vicarious Stress Audit &amp; Practice Sustainability</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>January:</strong> Mid-Year Analysis &amp; Second-Semester Focus</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>February:</strong> Group Counseling Expansion &amp; Mindsets &amp; Behaviors Depth</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>March:</strong> Spring ASCA Audit &amp; Scheduling Advocacy</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>April:</strong> College/Career/Crisis Season &amp; Mentee-Led Review</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>May:</strong> Year 2 Close &amp; Year 3 Planning</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+
+<h3 style="color: #800020; margin: 30px 0 15px 0; font-size: 22px;">📅 Year 3 at a Glance</h3>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-left: 6px solid #800020; border-radius: 8px; margin: 0 0 15px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>August:</strong> Consultant Mode, Year 3 Agreement Established</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>September:</strong> Mentee-Led Agenda, Career Trajectory</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>October:</strong> Three-Year Pattern Note, Mentor as Mirror</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>November:</strong> Final First-Half Gate Check, Three-Year Documentation</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>December:</strong> Professional Identity &amp; What Comes Next</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>January:</strong> Three-Year Analysis &amp; Transition Planning</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>February:</strong> Practice Philosophy Documented, Teaching from Experience</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>March:</strong> Professional Contribution — Leading Beyond the Building</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>April:</strong> Final Gate Check, Program Documentation Assembled</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">•</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>May:</strong> Program Close — Relationship Closed with Intention</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+
 <table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="15">
 <tbody><tr><td style="color: #555; font-size: 13px; line-height: 1.5;">
 This program is aligned with the Michigan Department of Education's <em>Standards for Mentoring and Induction of New Teachers, School Counselors, and Administrators</em> (April 2026), the ASCA National Model, and the ASCA Mindsets and Behaviors for Student Success.
@@ -172,7 +226,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 </div>
 </section>
 
-<section id="august" class="page">
+<section id="y1-august" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
 <table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
@@ -245,7 +299,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 </div>
 </section>
 
-<section id="september" class="page">
+<section id="y1-september" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
 <table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
@@ -318,7 +372,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 </div>
 </section>
 
-<section id="october" class="page">
+<section id="y1-october" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
 <table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
@@ -391,7 +445,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 </div>
 </section>
 
-<section id="november" class="page">
+<section id="y1-november" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
 <table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
@@ -470,7 +524,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 </div>
 </section>
 
-<section id="december" class="page">
+<section id="y1-december" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
 <table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
@@ -543,7 +597,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 </div>
 </section>
 
-<section id="january" class="page">
+<section id="y1-january" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
 <table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
@@ -616,7 +670,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 </div>
 </section>
 
-<section id="february" class="page">
+<section id="y1-february" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
 <table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
@@ -689,7 +743,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 </div>
 </section>
 
-<section id="march" class="page">
+<section id="y1-march" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
 <table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
@@ -762,7 +816,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 </div>
 </section>
 
-<section id="april" class="page">
+<section id="y1-april" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
 <table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
@@ -841,7 +895,7 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 </div>
 </section>
 
-<section id="may" class="page">
+<section id="y1-may" class="page">
 <div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto;">
 <table style="width: 100%; background-color: #800020; border-radius: 8px; margin-bottom: 20px;" cellspacing="0" cellpadding="20">
 <tbody><tr><td style="text-align: center; color: white;">
@@ -913,18 +967,1116 @@ This program is aligned with the Michigan Department of Education's <em>Standard
 
 </div>
 </section>
+
+<!-- ==================== YEAR 2 SECTIONS ==================== -->
+
+<section class="page" id="y2-august">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 2 — August: Year 2 Agreement</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Caseload Review &amp; Pattern Recognition</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">Year 2 begins with a different foundation than Year 1. Your mentee is no longer learning the basics of the role — they are refining their practice and developing their own professional voice. The August work is about naming what Year 1 revealed, setting more intentional goals, and recalibrating the mentoring relationship for a more collaborative dynamic.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Co-create a Year 2 mentoring agreement together: what the mentee wants to focus on, how sessions will run, and what "support" looks like now versus Year 1. The mentee should drive this conversation — your job is to respond, not prescribe.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review Year 1 goals together — what was accomplished, what evolved, what carried over?</li>
+<li>Draft 2–3 Year 2 goals that reflect deeper practice, not just survival (mentee leads)</li>
+<li>Discuss how the mentoring relationship itself should feel different this year</li>
+<li>Set meeting cadence for Year 2 — may be less frequent than Year 1 weekly rhythm</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Check in on how your mentee recharged over the summer — what did they carry, what did they put down?</li>
+<li>Name any Year 1 patterns that affected well-being and discuss how Year 2 might be different</li>
+<li>Revisit the crisis-debrief standing offer — confirm it's still in place and the channel is clear</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review key relationships built in Year 1 — which are strong, which need attention?</li>
+<li>Discuss any changes in the building or caseload that affect community dynamics</li>
+<li>Talk about how your mentee's professional presence in the building has grown</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Do a caseload review from Year 1 — what patterns did they notice in student needs?</li>
+<li>Discuss how their use of ASCA National Model components felt in Year 1 and what to deepen</li>
+<li>Identify one area of practice (individual, group, classroom, systemic) to develop intentionally in Year 2</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">Resist the pull to run Year 2 like Year 1. Your mentee knows the building, the caseload, and the role now. Ask before advising — they may already have the answer and just need you to confirm their instinct.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Start the Year 2 contact log immediately. Same structure as Year 1 — date, times, topic, dual initials. Principal sign-off at November 15 and May 1.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 August Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 2 mentoring agreement established (mentee-led)</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 2 contact log started</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 1 goals reviewed; Year 2 goals drafted</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Crisis-debrief standing offer confirmed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Meeting cadence agreed upon for Year 2</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y2-september">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 2 — September: Deepening Goals</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Intentional Practice Focus</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">September of Year 2 is about finalization and intention. The goals drafted in August get refined against the reality of who is actually in your mentee's caseload this year, what MTSS looks like in the building, and what they know now that they didn't know in September of Year 1. This is the month to move from broad growth areas to specific, observable practice targets.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Ask your mentee: "What do you want to be better at by May that you can't yet do consistently?" That's the Year 2 goal. Help them make it specific enough to know when they've achieved it.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Finalize Year 2 goals with enough specificity to guide the year</li>
+<li>Discuss how your mentee wants feedback — what's helpful, what feels like evaluation?</li>
+<li>Establish a session rhythm: who sets the agenda, what topics are standing, what's brought fresh each time</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Check in on the opening-month energy — Year 2 September often feels more manageable, but watch for overconfidence leading to overcommitment</li>
+<li>Talk about professional community: is your mentee connecting with MSCA or ASCA peers beyond the building?</li>
+<li>Discuss how their sense of belonging in the building and in the profession has grown</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Discuss how your mentee is orienting to the new school year — what they're seeing early in the caseload</li>
+<li>Talk about MTSS: what role is your mentee taking in the building's tiered support structures this year?</li>
+<li>Identify one community or family relationship to intentionally develop this fall</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review how Year 2 caseload compares to Year 1 — different demographics, presenting concerns, complexity?</li>
+<li>Discuss how your mentee is applying what they learned about individual counseling in Year 1</li>
+<li>Talk about group counseling: is it part of their Year 2 plan? What populations, what needs?</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">Year 2 goals should feel slightly out of reach — not impossible, but not just refinements of Year 1 habits either. If your mentee's goals sound like "keep doing what I did last year," push for one that requires genuinely new practice.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log September hours this month. The November 15 gate check is ten weeks away — the habit from Year 1 should carry over automatically.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 September Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 2 goals finalized and specific</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Session rhythm established (agenda ownership, standing topics)</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">MTSS role for Year 2 clarified</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Contact log current through September</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y2-october">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 2 — October: ASCA Alignment Audit (Depth)</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">MTSS Leadership Role</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">The October ASCA Alignment Audit in Year 2 is not the same as Year 1. Your mentee now has a full year of practice behind them — they know what their actual use of time looks like versus the ideal, and they can interpret the audit results with that lived experience. This audit should surface deeper questions about the program, not just a checklist of activities.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Complete the ASCA Alignment Audit and compare it side-by-side with the Year 1 October results. What changed? What didn't? What does the pattern reveal about where time actually goes in this building — and what might your mentee do differently to shift it?</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Check in on Year 2 goals — are they still the right targets six weeks in?</li>
+<li>Discuss what the ASCA Audit results reveal about alignment between stated goals and actual practice</li>
+<li>Name one thing your mentee is doing better than they realize</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>October tends to be the first crunch month — check in on sustainability and workload management</li>
+<li>Discuss any crisis situations handled so far this year — offer debrief space if needed</li>
+<li>Talk about peer consultation: who does your mentee go to when they need a second opinion?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review MTSS participation: is your mentee contributing as a data-informed team member, or still finding their footing?</li>
+<li>Discuss the 504 process — how is your mentee managing accommodation coordination this year?</li>
+<li>Talk about any family or community situations that have required counselor involvement this fall</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review ASCA Alignment Audit results — use-of-time, direct vs. indirect services, program components</li>
+<li>Compare to Year 1 October audit: what has improved, what remains misaligned?</li>
+<li>Identify one concrete change to make in the second half of the fall semester based on audit findings</li>
+<li>Discuss Mindsets and Behaviors: is your mentee integrating M&amp;B into classroom lessons or small group work?</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">The audit is most valuable when your mentee interprets it, not when you interpret it for them. Ask "What do you notice?" before offering your own read. Their analysis of their own data is the skill that will serve them long after the mentoring program ends.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log October hours. File the Year 2 ASCA Audit alongside the Year 1 audit — the comparison is part of the program record. Gate check is six weeks away.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 October Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 2 ASCA Alignment Audit completed and filed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 1 vs. Year 2 audit comparison discussed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">One practice change identified based on audit findings</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">MTSS role reviewed and active</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Contact log current through October</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y2-december">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 2 — December: Vicarious Stress Audit</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Practice Sustainability</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">December in Year 2 carries a different weight than Year 1. Your mentee isn't just surviving the semester close — they're beginning to understand what it means to do this work for a career. The cumulative effect of holding hard student stories, managing crises, and being the emotional center of a building becomes real around now. December is the right time to name it and build sustainable practices before Year 3.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Do a Vicarious Stress Audit together — not clinical, just honest. Ask: What are you carrying from this semester that you haven't been able to put down? What has stayed with you? What do you need to intentionally release before winter break? Document the conversation; revisit it in January.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review first-semester progress toward Year 2 goals — what's been accomplished, what needs a second-semester push?</li>
+<li>Discuss what the mentoring relationship has looked like this semester — is the cadence working?</li>
+<li>Plan January re-entry: what does your mentee want to focus on immediately after break?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Conduct the Vicarious Stress Audit (see Big Move above)</li>
+<li>Discuss the winter break plan — what does genuine rest look like for your mentee?</li>
+<li>Talk about any situations from the first semester that are still unresolved and how to hold them over break</li>
+<li>Name the boundary between "professional compassion" and "personal absorption" — is that line holding?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Discuss how your mentee shows up for students and families during the holiday season</li>
+<li>Talk about any families in the caseload experiencing seasonal stress or hardship — how is your mentee supporting without overextending?</li>
+<li>Review December building community dynamics — celebrations, equity considerations, belonging for all students</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Discuss any crisis situations from the first semester — how did your mentee handle them? What would they do differently?</li>
+<li>Review use-of-time in December: counselors often get pulled into non-counseling tasks at semester end</li>
+<li>Talk about what second-semester program goals look like from a practice standpoint</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">Share something you carry from your own practice — a case type, a season, a recurring situation that still lands hard on you. Modeling that vicarious stress never fully disappears, and that you've built ways to hold it, is more useful than reassuring your mentee that it gets easier.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log December hours before break — including any brief check-ins. Save the Vicarious Stress Audit notes in the program record. The spring documentation window opens in January.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 December Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Vicarious Stress Audit completed and documented</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">First-semester goal progress reviewed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Winter break rest plan discussed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">December hours logged before break</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y2-january">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 2 — January: Mid-Year Analysis</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Second-Semester Focus</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">January of Year 2 is the mid-point of the full program — halfway through three years. It's a natural moment to look at the arc so far and set a clear direction for the second semester. Your mentee has more than a year of practice behind them. Their instincts are sharper; their questions are more sophisticated. Meet them there.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Ask your mentee to bring a self-assessment to January's session: What do I do well now that I didn't in Year 1? What am I still avoiding? What do I want Year 3 to look like? Use that as the session's agenda — don't bring your own.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review Year 2 goals — what does the second semester need to accomplish?</li>
+<li>Discuss how the mentoring relationship will evolve heading into Year 3</li>
+<li>Ask: what kind of support does your mentee want for the rest of the year?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Revisit the December Vicarious Stress Audit — how did the break help? What came back with them?</li>
+<li>Discuss sustainable practice habits your mentee has built — which are working, which have slipped?</li>
+<li>Talk about what they're looking forward to in the second semester</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Discuss January re-entry dynamics — students, families, and staff coming back after break often need support</li>
+<li>Talk about the second-semester MTSS calendar and your mentee's role in it</li>
+<li>Review professional network: who has your mentee built connections with outside the building?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review second-semester program plan — what direct services, group work, and classroom lessons are planned?</li>
+<li>Discuss how your mentee's individual counseling approach has evolved since Year 1</li>
+<li>Talk about any areas of practice they have been avoiding — now is the time to address them</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">January self-assessments are most honest when they name both strengths and avoidances. Make it safe to say "I still don't feel confident with..." — that's where the real Year 2 growth happens.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log January hours. Start building toward the May 1 gate check — the second half of the year goes faster than the first.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 January Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Mentee-led self-assessment completed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Second-semester goals and focus areas set</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 3 direction beginning to take shape</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">January hours logged</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y2-february">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 2 — February: Group Counseling Expansion</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Mindsets &amp; Behaviors Depth</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">Group counseling is one of the most efficient and underused tools in a school counselor's practice. By Year 2, your mentee has a better sense of what student need clusters exist in the building, which makes intentional group design more possible. February is a natural time to examine what group work they are doing and what they could be doing.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Review your mentee's current group counseling practice. If they are running groups: what are the outcomes, and are they tied to ASCA Mindsets and Behaviors? If they are not running groups: what population or need in their caseload is the strongest candidate, and what's the barrier to starting?</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Check in on second-semester goal progress — what's gaining traction?</li>
+<li>Discuss what "stretch practice" looks like for your mentee in Year 2</li>
+<li>Review the mentoring relationship — is the session format still serving what your mentee needs?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>February is often a low-energy month — check in on emotional reserves and workload</li>
+<li>Discuss self-care practices that are actually working versus ones that feel like obligations</li>
+<li>Talk about professional joy: what parts of the job are genuinely energizing your mentee right now?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Discuss how your mentee is supporting students through the mid-winter season (often high-need for mental health referrals)</li>
+<li>Talk about classroom lessons or prevention programming happening this spring</li>
+<li>Review any 504 or MTSS work that requires family collaboration in the second semester</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review current and planned group counseling — needs addressed, M&amp;B connections, outcomes tracked</li>
+<li>Discuss ASCA Mindsets and Behaviors: which standards are most present in your mentee's daily work?</li>
+<li>Talk about classroom guidance — how is your mentee's comfort with large-group delivery growing?</li>
+<li>Identify one area of practice to strengthen before the spring ASCA audit in March</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">Group counseling anxiety is real, even in Year 2. If your mentee is avoiding groups, it's usually about fear of the room — losing control, not knowing what to do when something unexpected surfaces. Name it, then offer to do a walk-through or co-plan a group structure together.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log February hours. The May 1 gate check is three months out — confirm the log is current and the spring ASCA audit is on the calendar for March.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 February Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Group counseling practice reviewed and strengthened or launched</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">ASCA Mindsets &amp; Behaviors integration discussed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Spring ASCA audit on the calendar for March</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">February hours logged</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y2-march">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 2 — March: Spring ASCA Audit</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Scheduling Advocacy</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">The spring ASCA Alignment Audit in Year 2 is paired with one of the most important counselor advocacy conversations of the year: scheduling. March is when next year's schedule is being built, and when counselors are most at risk of being assigned supervisory, testing coordination, or clerical duties that don't belong in their role. Your mentee needs to know how to advocate for appropriate use of time — and March is when that skill gets tested.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Complete the spring ASCA Alignment Audit. Then ask: "Is anyone asking you to do things next year that aren't in your role?" Help your mentee prepare a specific, professional response — grounded in ASCA role definition and use-of-time data — for any inappropriate duties that are being assigned or assumed.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review spring goal progress — what needs a final push before May?</li>
+<li>Discuss how your mentee is growing in professional assertiveness and role clarity</li>
+<li>Talk about the mentoring relationship heading into Year 3 — what will they want to keep, what will they want to change?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>March can be a high-stress month — discuss energy management heading into spring</li>
+<li>Talk about any anticipatory stress around end-of-year demands (testing, scheduling, transitions)</li>
+<li>Check in on the peer consultation relationship — is it being used?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Discuss scheduling conversations with administration — how is your mentee positioning their role?</li>
+<li>Talk about spring transition planning: 8th-to-9th, incoming kindergarteners, students leaving the district</li>
+<li>Review any MTSS decisions coming that require counselor input on next year's plans</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Complete the spring ASCA Alignment Audit and compare to October results</li>
+<li>Identify the use-of-time shift that would most improve program alignment in Year 3</li>
+<li>Discuss spring classroom guidance and prevention programming — how does your mentee measure their impact?</li>
+<li>Talk about the second-half Mindsets and Behaviors integration check — what evidence exists?</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">Role advocacy is one of the hardest skills for new counselors to develop because it requires pushing back on administrators. Coach your mentee to lead with data ("my use-of-time analysis shows...") rather than preference ("I don't want to..."). Data-based advocacy is both more effective and more professionally sustainable.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log March hours. File the spring ASCA audit. The May 1 gate check is eight weeks away — all documentation should be substantially complete by end of March.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 March Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Spring ASCA Alignment Audit completed and filed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Oct vs. March audit comparison discussed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Scheduling advocacy conversation prepared or completed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">March hours logged</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y2-april">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 2 — April: College/Career/Crisis Season</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Mentee-Led Review</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">April is the most demanding month in most school counseling calendars — testing logistics, senior transitions, college decisions, mental health referrals, and scheduling for next year all converge. Your mentee has now lived through one full April; they know what's coming. Use that knowledge: this month's session should be mentee-led, with your role as thought partner and stabilizer.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Let your mentee run the April session entirely — they set the agenda, they bring the questions. Your only preparation is to ask at the end: "What do you want me to know about how you're handling this month?" Listen more than you talk.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Year-end goal review: what will your mentee be able to say they accomplished in Year 2?</li>
+<li>Discuss how the mentoring relationship should close at the end of Year 2 and transition into Year 3</li>
+<li>Begin drafting Year 3 intentions — what does your mentee want Year 3 to be about?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>April well-being check: this is the hardest month — how is your mentee doing, honestly?</li>
+<li>Discuss the counselor's specific April load — senior stress, testing anxiety, referral volume spikes</li>
+<li>Talk about what they're doing to protect themselves through the crunch without becoming unavailable to students</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Discuss spring transition support — how is your mentee handling the emotional weight of senior goodbyes or student departures?</li>
+<li>Talk about family communication in April: college decisions, testing results, next-year placement concerns</li>
+<li>Review MTSS spring data — what does year-end data show about the impact of Tier 2 and Tier 3 supports?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Discuss how your mentee is managing the April volume — what's getting prioritized, what's getting deferred?</li>
+<li>Talk about documentation: are records current heading into year-end?</li>
+<li>Review any crisis situations from the spring semester — how did your mentee handle them compared to Year 1?</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">In April, the most important thing you can do is show up. Your mentee doesn't need your curriculum — they need to know someone is paying attention to how they're doing. A short check-in that says "I see how hard this month is" is worth more than a full structured session.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Total Year 2 log hours and get principal initials by mid-to-late April. Don't wait until May 1 — the end of April is already packed. Log April hours immediately as meetings happen.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 April Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Mentee-led April session completed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year-end goal review completed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 2 log totaled and principal initials obtained (target: mid-to-late April)</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 3 intentions drafted</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y2-may">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 2 — May: Year 2 Close</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Year 3 Planning</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">Year 2 close is different from Year 1 close. Your mentee isn't relieved to have survived — they're taking stock of who they've become. The Year 2 May session is about honest reflection on growth, naming what Year 3 needs to accomplish, and beginning to shift the relationship toward the consultant mode that defines Year 3.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Close Year 2 with a real statement of what you've witnessed across both years — not feedback, not advice. "Here is what I watched you become." Then ask your mentee to do the same for themselves. Document both; they become the foundation for Year 3.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Final Year 2 goal review — what was accomplished, what evolved, what wasn't the right goal after all?</li>
+<li>Discuss what the mentoring relationship should look like in Year 3 (more consultant, less guide)</li>
+<li>Draft Year 3 focus areas while Year 2 is still fresh</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Year-end well-being reflection — how is your mentee doing as they close the year?</li>
+<li>Discuss summer renewal: what does genuine professional recharge look like?</li>
+<li>Talk about what they are leaving behind from Year 2 and what they are carrying into Year 3</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Reflect on community relationships built across two years — which are strongest?</li>
+<li>Discuss professional network: who has your mentee built connections with outside the building?</li>
+<li>Talk about how their professional presence in the building has grown</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review the full Year 2 ASCA program arc — what worked, what needs rethinking?</li>
+<li>Discuss how your mentee's individual, group, and classroom practice has evolved since Year 1</li>
+<li>Identify one area of practice to develop independently in Year 3, without a structured mentoring goal</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">Close Year 2 with a real statement of what you witnessed — specific, longitudinal, human. Your mentee will carry that into Year 3 and beyond. The most powerful thing a mentor can give is a clear-eyed account of who someone is becoming.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">If not done in April, total Year 2 hours and get principal initials. Save the log — it's the foundation for Year 3 and the start of the three-year district record.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 May Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Total log hours and principal initials done</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Mentee-led Year 2 reflection across all four domains completed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 3 focus areas drafted while Year 2 is fresh</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 3 mentoring relationship format discussed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year-end celebration or acknowledgment with mentee completed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 2 contact log saved for Year 3 handoff</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<!-- ==================== YEAR 3 SECTIONS ==================== -->
+
+<section class="page" id="y3-august">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 3 — August: Consultant Mode</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Year 3 Agreement Established</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">Year 3 begins with a shift in the mentoring relationship that should be made explicit, not assumed. Your mentee is no longer a new counselor — they have two full years of practice and a developing professional identity. Your role this year is consultant: you respond when asked, you offer perspective your mentee can't yet see, and you trust their judgment rather than guiding it. Name this shift in August and build the agreement around it.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Co-write the Year 3 agreement — mentee drafts it, you refine it. Include: cadence, primary focus areas, how decisions will be made about when to meet versus check in informally, and an explicit statement that the mentee leads every session agenda.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review Year 2 goals and the closing reflection — what carries into Year 3?</li>
+<li>Help your mentee identify 1–2 Year 3 goals that are self-directed, not mentor-assigned</li>
+<li>Discuss explicitly what "consultant mode" means for both of you this year</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Check in on how your mentee is entering Year 3 — energy, intention, what they're carrying from the summer</li>
+<li>Revisit the crisis-debrief standing offer for Year 3 — confirm it remains in place</li>
+<li>Discuss what sustainable practice looks like for them now, two years in</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Talk about how your mentee's standing in the building has grown — how do staff and students see them now?</li>
+<li>Discuss one community or professional relationship to develop intentionally this year</li>
+<li>Talk about MSCA or ASCA involvement — is your mentee becoming a contributor, not just a member?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review caseload entering Year 3 — what patterns from prior years are they walking into?</li>
+<li>Discuss one area of ASCA National Model practice your mentee wants to deepen independently this year</li>
+<li>Talk about what they want their counseling program to look like at the end of Year 3</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">Resist the pull to fill silence in Year 3. When your mentee pauses to think, let them think. The most powerful thing you can do this year is demonstrate that you trust their instincts.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Start the Year 3 contact log immediately. Same structure as Years 1 and 2 — principal sign-off at November 15 and May 1.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 August Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 3 mentoring agreement signed (mentee-drafted)</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 3 contact log started</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 3 self-directed goals drafted</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Consultant-mode expectations discussed and agreed upon</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y3-september">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 3 — September: Mentee-Led Agenda</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Career Trajectory</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">Every session in Year 3 starts with the mentee's agenda. They bring the questions, they set the direction, they own the conversation. September is the month to establish this norm firmly — before old Year 1 and 2 habits reassert themselves. It's also the right time to look beyond the current position and ask: where is your mentee heading professionally?</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Ask: "Where do you want to be in five years?" Then spend the session reverse-engineering what Year 3 needs to contribute to that trajectory — not just completing the program, but actively building toward whatever comes next.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Establish mentee-led agenda as the Year 3 norm — confirm your mentee understands they own each session</li>
+<li>Review the Year 3 agreement — anything to adjust now that the year has started?</li>
+<li>Discuss five-year career trajectory and what Year 3 contributes to it</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Check in on Year 3 opening energy — does your mentee feel more settled, or is there a new kind of pressure?</li>
+<li>Discuss how their sense of professional identity has grown since Year 1</li>
+<li>Talk about professional community — are they giving back to MSCA or ASCA networks yet?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Discuss how your mentee is showing up for students in September of Year 3 versus Year 1</li>
+<li>Talk about one community partnership or school initiative they want to own fully this year</li>
+<li>Identify who in the building or district your mentee is becoming a resource for</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review early caseload patterns — what does your mentee notice in Year 3 that they couldn't have seen in Year 1?</li>
+<li>Discuss how their ASCA program planning is more intentional this year</li>
+<li>Talk about one counseling skill or approach they want to develop independently, without structured mentoring support</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">When your mentee brings a problem they've already solved, ask "How did you decide?" not "Was that the right call?" In Year 3 the reasoning process matters more than whether the answer was optimal.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log September hours. Confirm the Year 3 agreement is on file with your building principal before the first gate check window opens.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 September Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Mentee-led agenda norm established</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Five-year trajectory conversation completed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 3 agreement confirmed on file with principal</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">September hours logged</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y3-october">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 3 — October: Mentor as Mirror</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Three-Year Pattern Note</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">You have watched your mentee across three Octobers. You know how they handle the first-quarter crunch, where they default under pressure, what they do well without noticing. This is the feedback only a three-year mentor can offer. October is the month to put it in writing and share it — not as an evaluation, but as a witness account.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Write a Three-Year Pattern Note — a personal reflection on what you have observed across all three years. Share it in October's session. Let your mentee read it and respond before you discuss. File it in the program record.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Share the Three-Year Pattern Note and create space for your mentee's response</li>
+<li>Check in on Year 3 goals — are they still the right targets?</li>
+<li>Discuss what growth your mentee can see in themselves that they couldn't have articulated in Year 1</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>October well-being check — how is your mentee handling the first-quarter crunch in Year 3?</li>
+<li>Name a well-being pattern you've observed across three Octobers — share it with care</li>
+<li>Discuss what self-care habits have actually stuck across three years</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Complete the Year 3 ASCA Alignment Audit and compare to Years 1 and 2 October results</li>
+<li>Discuss how your mentee's role in the MTSS team has evolved across three years</li>
+<li>Talk about one community relationship that has grown significantly since Year 1</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Name a counseling practice strength you've observed across three years that your mentee may not recognize in themselves</li>
+<li>Discuss what the three-year ASCA audit comparison reveals about program growth</li>
+<li>Talk about how your mentee's crisis response has matured since Year 1</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">The Three-Year Pattern Note is a gift, not a report card. Write it in the spirit of "here is what I saw" rather than "here is what you should improve." Strengths named with specificity and longitudinal evidence land harder than any feedback you've offered in three years.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log October hours. File the Three-Year Pattern Note and the Year 3 ASCA audit in the program record. Gate check is six weeks away.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 October Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Three-Year Pattern Note written, shared, and filed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 3 ASCA Alignment Audit completed and filed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Mentee response to Pattern Note documented</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">October hours logged</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y3-november">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 3 — November: Final First-Half Gate Check</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Three-Year Documentation Begins</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">The November 15 gate check in Year 3 is the last first-half milestone of the full program. Use this month to complete the gate check cleanly and to begin pulling together the three-year record — not as a compliance exercise, but as a genuine account of growth across three years of counseling practice.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Complete the gate check by November 15, then pull Years 1, 2, and 3 contact logs together and do a three-year hour total with your mentee. Ask them to narrate what they notice. Their ability to interpret their own record is evidence of growth no checklist can capture.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>First-half Year 3 goal progress review</li>
+<li>Discuss what support your mentee still wants from you in the second semester</li>
+<li>Talk about the transition out of the formal program — what will the relationship look like after May?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>End-of-first-semester well-being check for Year 3 — how does it compare to Year 1 November?</li>
+<li>Discuss peer consultation: who is your mentee going to now when they need support?</li>
+<li>Talk about any situations from the fall that need acknowledgment before the holiday break</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review fall community and family engagement — what has your mentee built that feels genuinely theirs?</li>
+<li>Discuss professional organization involvement — is your mentee contributing, not just attending?</li>
+<li>Talk about how the building community sees your mentee now versus Year 1</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review first-semester caseload — what student need patterns has your mentee noticed across three years?</li>
+<li>Discuss how their ASCA program is running more independently this year</li>
+<li>Begin three-year documentation review: pull all ASCA audits together and look at the arc</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">When you review the three-year logs together, let your mentee do the narrating. Ask what they notice. Their capacity to read their own record — to see their own growth — is the outcome the program has been working toward since August of Year 1.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Gate check by November 15: principal initials on Year 3 first half (Aug–Nov). Pull all three years of logs together and calculate the three-year running total. Don't wait until April to assemble the record.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 November Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>Nov 15: Principal has initialed the first half (Aug–Nov) of the Year 3 contact log</strong></td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Three-year running hour total calculated and documented</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">All three ASCA audits reviewed together</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Three-Year Pattern Note filed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">November hours logged</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y3-december">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 3 — December: Professional Identity</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">What Comes Next</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">The December break in Year 3 is a natural moment to look at the arc — who your mentee was when they started, who they are now, and what kind of counselor they are becoming. This isn't about program completion; it's about professional identity. Ask them to name it. The answer will tell you more about three years of growth than any checklist.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Ask your mentee to write a one-page Counseling Practice Statement before your December session — not a resume bullet, but a genuine articulation of what they believe about school counseling and how they practice it. Read it before you meet. Respond to what they actually wrote.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Discuss the Counseling Practice Statement — what does it reveal about growth since Year 1?</li>
+<li>Talk about January re-entry: what does your mentee want to accomplish in the second semester?</li>
+<li>Begin thinking about the final program close in May — what does a meaningful close look like?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>December well-being check — how is your mentee closing the first semester of their final year?</li>
+<li>Discuss winter break as genuine renewal, not just recovery</li>
+<li>Talk about what they are most proud of from Year 3 so far</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Reflect on holiday-season community presence — how does your mentee show up for students and families in December?</li>
+<li>Discuss how their professional community beyond the building has grown across three years</li>
+<li>Talk about what kind of counselor they want to be known as</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Discuss the Counseling Practice Statement — what does it say about their ASCA alignment, their approach to student wellbeing, their ethical commitments?</li>
+<li>Talk about what their counseling program looks like now versus Year 1</li>
+<li>Identify one practice belief your mentee holds that they didn't have when they started</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">The Counseling Practice Statement is worth keeping. Encourage your mentee to save a copy in their own professional portfolio — it's a snapshot of who they were at the end of Year 3 that their future self will want to find.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log December hours before break. File the Counseling Practice Statement in the program record. The spring documentation window opens in January.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 December Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Counseling Practice Statement written and filed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">December hours logged before break</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Three-year documentation folder confirmed complete through December</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y3-january">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 3 — January: Three-Year Analysis</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Transition Planning</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">January of Year 3 opens the final semester. Use this month to look back at the full arc and forward at what remains — and to begin the transition conversation explicitly. Transition planning isn't about ending the friendship; it's about ensuring your mentee has the internal resources and external network to lead their practice without a formal mentor.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Conduct a Three-Year Analysis together: review the original Year 1 goals against where your mentee stands today. What was accomplished? What evolved? What turned out to be the wrong goal? Document the analysis — it anchors the final program narrative in May.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Complete the Three-Year Analysis and document it</li>
+<li>Discuss what support your mentee needs in the second semester versus what they can handle independently</li>
+<li>Begin transition planning: who will your mentee go to after the program closes?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>January re-entry check — how is your mentee coming back after the break?</li>
+<li>Discuss what sustainable practice looks like for the long term — not just this year</li>
+<li>Talk about peer consultation and professional community as ongoing well-being infrastructure</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Identify stakeholder relationships that will continue after the formal program ends</li>
+<li>Discuss who in the professional community can serve as an informal thought partner going forward</li>
+<li>Talk about how your mentee will stay connected to MSCA and ASCA networks independently</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review the second-semester program plan — what does your mentee want to accomplish in their final program semester?</li>
+<li>Discuss which ASCA National Model components they now run with full confidence</li>
+<li>Talk about what ongoing professional development they are planning after the program closes</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">Transition planning can bring up real emotion — for both of you. Name it directly: "This relationship is going to change, and that's worth acknowledging." The goal isn't to end the friendship, just the formal structure. A mentee who knows how to stay in touch is better off than one who doesn't know how to ask.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log January hours. File the Three-Year Analysis. Begin assembling the final program documentation packet — don't leave it all for April.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 January Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Three-Year Analysis completed and filed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Transition planning conversation initiated</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Final program documentation assembly begun</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">January hours logged</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y3-february">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 3 — February: Practice Philosophy Documented</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Teaching from Experience</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">By Year 3 February, your mentee has developed a counseling philosophy — not from training, but from three years of practice with real students. February is the month to surface and document that philosophy explicitly. It becomes one of the most meaningful artifacts in the program record, and a foundation for however they choose to grow professionally from here.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Ask your mentee to articulate their counseling philosophy in writing — not the ASCA framework, but what they actually believe about how students grow, what the counselor's role is, and how they practice. Compare it to what they would have said in Year 1. The gap is the evidence of three years of development.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Check in on second-semester Year 3 goals — what's on track for May?</li>
+<li>Discuss what your mentee wants to have done independently before the program closes</li>
+<li>Talk about what they would say to a Year 1 counselor based on their own experience</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>February well-being check — how is your mentee holding up in the final semester?</li>
+<li>Discuss what professional joy looks like for them now versus Year 1</li>
+<li>Talk about vicarious stress: what have they learned across three years about carrying hard student stories?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Discuss any community initiatives or school-wide programs your mentee is leading this spring</li>
+<li>Talk about how they are contributing to the broader counseling profession — presenting, writing, mentoring peers</li>
+<li>Identify who in the building or district looks to your mentee as a resource</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Document and discuss the counseling philosophy (see Big Move above)</li>
+<li>Review spring program plans — groups, classroom lessons, transitions, college/career work</li>
+<li>Talk about what ASCA components your mentee now leads with full confidence</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">The practice philosophy document is a gift to their future self. Encourage them to date it and keep it somewhere accessible — in five years they will want to see what they believed at the end of Year 3, and whether it has held.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log February hours. File the practice philosophy document in the program record. The April gate check is eight weeks out — confirm documentation is on track.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 February Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Counseling practice philosophy documented and filed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Second-semester goals confirmed on track</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Final program documentation packet on track</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">February hours logged</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y3-march">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 3 — March: Leading Beyond the Building</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Professional Contribution</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">A counselor who has completed two-and-a-half years of practice has something to offer the profession, not just their building. March of Year 3 is about helping your mentee see themselves as a contributor — to MSCA, ASCA, district professional development, or peer networks. The program doesn't end when they finish; it ends when they start giving back.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Ask your mentee: "What would you want to share with other new counselors based on what you've learned?" Help them identify one concrete way to contribute to the profession — a session proposal, a peer conversation, a district PD offering — and support them in taking that step before the program ends.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Final push on Year 3 goals — what needs to happen in March and April?</li>
+<li>Discuss what the program close in May should feel like and what needs to be in place before then</li>
+<li>Talk about how your mentee will continue growing without a formal structure</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>March well-being check — spring crunch is beginning, how is your mentee managing?</li>
+<li>Discuss how they plan to protect well-being through April, the most demanding month</li>
+<li>Talk about what professional belonging looks like for them now — where do they feel most connected?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Do the spring ASCA Alignment Audit and compare to all previous audits</li>
+<li>Discuss spring scheduling advocacy — is your mentee holding their role boundaries with confidence?</li>
+<li>Talk about transition planning for students: spring transitions are a core counselor responsibility</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Complete and file the spring ASCA audit — this is the final audit in the program</li>
+<li>Discuss what your mentee would tell a Year 1 counselor about the spring counseling calendar</li>
+<li>Identify one professional contribution your mentee will make before or after program close</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">Encouraging your mentee to contribute to the profession is the final act of the mentoring relationship — you're not just closing a program, you're passing something forward. The counselors who sustain practice longest are the ones who give back early.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log March hours. File the final ASCA audit. The May 1 gate check is eight weeks away — documentation should be substantially complete by end of March.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 March Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Final (spring) ASCA Alignment Audit completed and filed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Professional contribution identified and planned</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Final program documentation substantially complete</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">March hours logged</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y3-april">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 3 — April: Final Gate Check</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Program Documentation Assembled</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">April is for completing, assembling, and verifying the three-year program record before the May 1 gate check. Nothing should be created in April that should have been created months ago — this is a completion month, not a catch-up month. If documentation is behind, triage it now. The May close should be about the relationship, not the paperwork.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Assemble the complete three-year program record: all three contact logs with principal initials, all gate check records, all six ASCA audits, the Three-Year Pattern Note, the Counseling Practice Statement, the practice philosophy document, and the Three-Year Analysis. Submit to building principal before May 1.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Final Year 3 goal review — what will your mentee carry out of the program?</li>
+<li>Discuss what the May close session should include — what needs to be said?</li>
+<li>Talk about how you'll stay in touch after the formal structure ends</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>April is peak-demand month — check in honestly on how your mentee is doing</li>
+<li>Discuss what self-care and professional sustainability look like after the program ends</li>
+<li>Talk about what they are most proud of across three years</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Discuss spring transition planning — seniors, grade-level transitions, students leaving the district</li>
+<li>Talk about how your mentee will maintain professional network and community connections independently</li>
+<li>Identify who in the district or profession can serve as ongoing thought partners</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Assemble and verify the full three-year program record (see Big Move above)</li>
+<li>Discuss what ongoing professional development your mentee is committing to after program close</li>
+<li>Talk about what the ASCA National Model will look like in their program in Year 4 and beyond</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">The record review is administrative — don't let it become the emotional close. Save that for May. April is for making sure the paperwork is airtight. May is for saying what matters.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log April hours immediately. Complete three-year program record submitted to building principal before May 1. Verify: all three contact logs have initials, all gate checks signed, all program documents filed.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 April Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Complete three-year program record assembled and submitted to principal</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">All three contact logs present with principal initials</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">All gate check records included and signed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">All six ASCA audits filed (Oct + Mar × 3 years)</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Program documents filed: Three-Year Pattern Note, Counseling Practice Statement, practice philosophy, Three-Year Analysis</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">April hours logged</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y3-may">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 3 — May: Program Close</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Relationship Closed with Intention</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">This is the end of the three-year program. The documentation is done. What remains is the human work: naming what happened across three years, honoring the relationship, and releasing your mentee into independent practice with clarity about who they are and what they can do. Don't rush it. A program that closes well is one the mentee carries with them.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Hold a dedicated final session — separate from any logistics or paperwork. Come prepared to say, out loud, what you witnessed across three years: who your mentee was in August of Year 1, who they are now, and what you believe they are capable of. Ask them to do the same for themselves. Let the conversation be what it needs to be.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Final reflection on three years — what goals were met, what evolved, what surprised both of you?</li>
+<li>Name the relationship explicitly: what it was, what it meant, what it becomes now</li>
+<li>Discuss how you'll stay in touch — informally, without the program structure</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Final well-being conversation — how is your mentee entering their fourth year on their own?</li>
+<li>Name what sustainable practice looks like for them, specifically — not in general</li>
+<li>Talk about the peer consultation relationships and professional communities that will carry them forward</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Reflect on the community relationships built across three years — which are most meaningful?</li>
+<li>Discuss how your mentee will continue growing their professional network independently</li>
+<li>Talk about the professional contribution they identified in March — has it happened or is it planned?</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Name the counseling commitment your mentee is carrying out of this program</li>
+<li>Discuss what their ASCA program will look like in Year 4 — what they will build, what they will sustain</li>
+<li>Talk about what it means to be a mentor themselves someday — what they would do, what they would do differently</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">Don't end with a checklist. End with the truth of what you saw. The most lasting thing a mentor can give is a clear-eyed account of who their mentee became — said out loud, in a room, with full attention. That's the close worth having after three years.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Log May hours and finalize all contact log totals. Confirm program closure with building principal. Retain copies of all documentation per district policy.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 May Final Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Final intentional closing session held</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">All three contact logs finalized and totaled</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Program closure confirmed with building principal</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Documentation copies retained per district policy</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">May hours logged — Year 3 log complete</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
+<section class="page" id="y2-november">
+<div style="background: #800020; color: white; padding: 20px 30px; margin-bottom: 24px; border-radius: 8px;">
+<h2 style="margin: 0; font-size: 22px;">Year 2 — November: Second Gate Check</h2>
+<p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Peer Consultation Habits</p>
+</div>
+<p style="color: #333; font-size: 15px; line-height: 1.7;">The November 15 gate check in Year 2 is procedurally identical to Year 1 — principal initials the first-half log — but the context is different. Your mentee is no longer a newcomer asking for help; they are a developing professional building the habits that will sustain their practice for decades. November is a good time to talk explicitly about how they will seek support when this formal program ends.</p>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Big Move This Month</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Ask your mentee: "Outside of our sessions, who do you go to when you need a second opinion on a hard case — without sharing protected details?" If they don't have an answer, help them identify and cultivate a peer consultation relationship before the program ends.</p>
+</td></tr></tbody></table>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Relationship &amp; Goals</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>First-half progress review on Year 2 goals — what's on track, what needs adjustment?</li>
+<li>Discuss how the mentoring relationship dynamic has shifted from Year 1 to Year 2</li>
+<li>Schedule second-half meetings now, before the holiday rhythm makes calendaring harder</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Well-Being &amp; Belonging</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>End-of-first-semester well-being check: how is your mentee doing, honestly?</li>
+<li>Discuss vicarious stress load — what has accumulated this fall and what needs to be named?</li>
+<li>Talk about peer consultation as a professional sustainability tool, not just crisis support</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Culture &amp; Community</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review fall family and community engagement — how has your mentee shown up for families this semester?</li>
+<li>Discuss how your mentee is perceived in the building: do staff see them as a resource?</li>
+<li>Talk about any collaborative initiatives (MTSS, 504, student support team) where your mentee is taking more ownership</li>
+</ul>
+<h3 style="color: #800020; border-bottom: 2px solid #caa217; padding-bottom: 6px;">Counseling Practice</h3>
+<ul style="color: #333; font-size: 14px; line-height: 1.8; padding-left: 20px;">
+<li>Review first-semester caseload patterns — what student needs have been most prominent?</li>
+<li>Discuss how your mentee handles case complexity differently than in Year 1</li>
+<li>Talk about ASCA Mindsets and Behaviors integration — where is it showing up in their practice?</li>
+</ul>
+<table style="width: 100%; background: #e8f4f8; border: 2px solid #4a90d9; border-left: 6px solid #4a90d9; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 8px 0; font-size: 16px;">Mentor Tip</h3>
+<span style="color: #333; font-size: 14px; line-height: 1.5;">The peer consultation conversation is one of the most important things you can do in Year 2. A counselor who has built a trusted peer network — someone they can call when a case is hard without sharing protected details — is a counselor who can sustain practice independently. Plant that seed now.</span>
+</td></tr></tbody></table>
+<table style="width: 100%; background: #fff8dc; border: 2px solid #caa217; border-left: 6px solid #caa217; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 10px 0; font-size: 16px;">📓 Logging Reminder</h3>
+<p style="color: #333; font-size: 14px; line-height: 1.6; margin: 0;">Gate check by November 15: principal initials on the first half (Aug–Nov) of the Year 2 contact log. If you've been logging as you go, this is a quick signature. Don't wait until the 15th to find out your log has gaps.</p>
+</td></tr></tbody></table>
+<table style="width: 100%; background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; margin: 20px 0;" cellspacing="0" cellpadding="20"><tbody><tr><td>
+<h3 style="color: #800020; margin: 0 0 15px 0; font-size: 18px;">📝 November Checkpoints</h3>
+<table style="width: 100%;" cellspacing="0" cellpadding="4"><tbody>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;"><strong>Nov 15: Principal has initialed the first half (Aug–Nov) of the Year 2 contact log</strong></td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Year 2 first-half goal progress reviewed</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Peer consultation relationship identified or cultivated</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Second-half meetings scheduled</td></tr>
+<tr><td style="color: #800020; width: 20px; vertical-align: top;">☐</td><td style="color: #333; font-size: 14px; line-height: 1.5;">Vicarious stress check-in completed</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</section>
+
 </div>
 <script>
-document.querySelectorAll('.tab-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const target = btn.dataset.target;
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+(function() {
+  let activeYear = 'y1';
+  let activeMonth = 'overview';
+
+  function showActive() {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById(target).classList.add('active');
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    let id = (activeMonth === 'overview') ? 'overview' : activeYear + '-' + activeMonth;
+    const target = document.getElementById(id);
+    if (target) target.classList.add('active');
+  }
+
+  document.querySelectorAll('.year-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.year-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeYear = btn.dataset.year;
+      showActive();
+    });
   });
-});
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeMonth = btn.dataset.month;
+      showActive();
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  });
+})();
 </script>
 </body>
 </html>
